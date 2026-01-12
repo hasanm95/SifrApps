@@ -9,7 +9,9 @@ export interface Solution {
 }
 
 export function SolutionItem({ solution }: { solution: Solution }) {
-  const Icon = (Icons as any)[solution.iconName] || Icons.HelpCircle;
+  const Icon =
+    (Icons[solution.iconName as keyof typeof Icons] as Icons.LucideIcon) ||
+    Icons.HelpCircle;
 
   return (
     <div className="tilt-card glass-elite group rounded-[2.5rem] border border-slate-200/20 p-10 shadow-xl transition-all duration-500 hover:shadow-2xl">

@@ -21,7 +21,7 @@ export function SolutionsSection() {
         </div>
         <div className="flex-1 pt-8 md:pt-16">
           <p className="text-xl leading-tight font-medium text-balance text-slate-500 md:text-2xl">
-            We don't just build features; we engineer{" "}
+            We don&apos;t just build features; we engineer{" "}
             <span className="border-b-2 border-emerald-500/30 text-slate-900">
               systemic improvements
             </span>{" "}

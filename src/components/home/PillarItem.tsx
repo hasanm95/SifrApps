@@ -8,7 +8,9 @@ export interface Pillar {
 }
 
 export function PillarItem({ pillar }: { pillar: Pillar }) {
-  const Icon = (Icons as any)[pillar.iconName] || Icons.HelpCircle;
+  const Icon =
+    (Icons[pillar.iconName as keyof typeof Icons] as Icons.LucideIcon) ||
+    Icons.HelpCircle;
 
   return (
     <div className="tilt-card group flex flex-col items-start rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-sm transition-all duration-500 hover:border-emerald-200/50 hover:shadow-2xl">

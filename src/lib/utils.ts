@@ -8,9 +8,9 @@ export function cn(...inputs: ClassValue[]) {
 /**
  * Throttles a function based on frame rate for better performance in animations.
  */
-export function rafThrottle<T extends (...args: any[]) => any>(fn: T) {
+export function rafThrottle<T extends (...args: unknown[]) => void>(fn: T) {
   let locked = false;
-  return function (this: any, ...args: Parameters<T>) {
+  return function (this: unknown, ...args: Parameters<T>) {
     if (locked) return;
     locked = true;
     window.requestAnimationFrame(() => {
