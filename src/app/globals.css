@@ -1,0 +1,220 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ================================================
+   SifrApps Design System - ELITE EDITION
+   "Stripe-meets-Apple" — Iridescent, 3D, Motion
+   ================================================ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Elite Light Palette */
+  --background: #ffffff;
+  --foreground: #020617; /* Elite Near-Black */
+
+  --card: #ffffff;
+  --card-foreground: #020617;
+
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f8fafc;
+  --secondary-foreground: #020617;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  --accent: #f1f5f9;
+  --accent-foreground: #020617;
+
+  --border: #e2e8f0;
+  --ring: #059669;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-emerald-500/20 selection:text-emerald-900;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1,
+      "ss01" 1;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  /* Elite Mesh Background */
+  .bg-iridescent {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .bg-iridescent::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background:
+      radial-gradient(
+        circle at 50% 50%,
+        rgba(5, 150, 105, 0.08),
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(37, 99, 235, 0.05),
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 20% 80%,
+        rgba(5, 150, 105, 0.03),
+        transparent 40%
+      );
+    filter: blur(80px);
+    animation: rotate-mesh 20s linear infinite;
+    z-index: 0;
+  }
+
+  @keyframes rotate-mesh {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* 3D Transform Container */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .tilt-card {
+    transition:
+      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+  }
+
+  .tilt-card:hover {
+    transform: rotateX(2deg) rotateY(2deg) translateZ(10px);
+    box-shadow:
+      0 40px 80px -20px rgba(0, 0, 0, 0.1),
+      0 0 40px rgba(5, 150, 105, 0.05);
+  }
+
+  /* Elite Typography */
+  .text-display {
+    @apply leading-[0.95] font-bold tracking-tight text-slate-900;
+    font-size: clamp(2.5rem, 8vw, 7rem);
+  }
+
+  /* Diagonal Stripe Section */
+  .diagonal-stripe {
+    position: relative;
+  }
+
+  .diagonal-stripe::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: inherit;
+    transform: skewY(-2deg);
+    z-index: -1;
+  }
+
+  /* Glass 2.0 */
+  .glass-elite {
+    @apply border border-white/40 bg-white/40 shadow-2xl backdrop-blur-2xl;
+    box-shadow:
+      inset 0 1px 1px rgba(255, 255, 255, 0.8),
+      0 20px 40px -10px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Foundation Elite */
+  .section-container {
+    @apply container mx-auto px-4 md:px-8 lg:px-12;
+  }
+
+  .skip-link {
+    @apply sr-only transition-all focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-xl focus:bg-emerald-600 focus:px-6 focus:py-3 focus:font-bold focus:text-white focus:shadow-2xl focus:ring-4 focus:ring-emerald-500/20 focus:outline-none;
+  }
+
+  .section {
+    @apply overflow-hidden py-12 md:py-20 lg:py-28;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .mask-radial {
+    mask-image: radial-gradient(circle, black, transparent 80%);
+  }
+
+  /* Scanline Beam */
+  .animate-scanline {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animate-scanline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(5, 150, 105, 0.2),
+      transparent
+    );
+    animation: scanline 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes scanline {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 200%;
+    }
+  }
+}
