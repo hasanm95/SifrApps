@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const footerLinks = {
   solutions: [
@@ -17,11 +18,22 @@ const footerLinks = {
   ],
 };
 
-export function Footer() {
+interface FooterProps {
+  variant?: "light" | "dark";
+}
+
+export function Footer({ variant = "light" }: FooterProps) {
   const currentYear = new Date().getFullYear();
+  const isDark = variant === "dark";
 
   return (
-    <footer role="contentinfo" className="border-border bg-background border-t">
+    <footer
+      role="contentinfo"
+      className={cn(
+        "border-t",
+        isDark ? "border-white/5 bg-[#020617]" : "border-slate-200 bg-white"
+      )}
+    >
       <div className="section-container py-12 md:py-16">
         {/* Main footer content */}
         <div className="grid gap-8 md:grid-cols-4 lg:gap-12">
@@ -29,12 +41,20 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link
               href="/"
-              className="text-foreground inline-flex items-center gap-2 text-lg font-semibold"
+              className={cn(
+                "inline-flex items-center gap-2 text-lg font-semibold",
+                isDark ? "text-white" : "text-slate-900"
+              )}
             >
               <SifrLogoSmall />
               <span>SifrApps</span>
             </Link>
-            <p className="text-muted-foreground mt-4 max-w-xs text-sm">
+            <p
+              className={cn(
+                "mt-4 max-w-xs text-sm",
+                isDark ? "text-slate-400" : "text-slate-500"
+              )}
+            >
               Logic-driven software where mathematical precision meets
               human-centric design.
             </p>
@@ -42,13 +62,20 @@ export function Footer() {
 
           {/* Solutions */}
           <div>
-            <h3 className="text-foreground mb-4 text-sm font-semibold">
+            <h3
+              className={cn(
+                "mb-4 text-sm font-semibold",
+                isDark ? "text-white" : "text-slate-900"
+              )}
+            >
               Solutions
             </h3>
             <ul className="space-y-3">
               {footerLinks.solutions.map((link) => (
                 <li key={link.label}>
-                  <FooterLink href={link.href}>{link.label}</FooterLink>
+                  <FooterLink href={link.href} isDark={isDark}>
+                    {link.label}
+                  </FooterLink>
                 </li>
               ))}
             </ul>
@@ -56,13 +83,20 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-foreground mb-4 text-sm font-semibold">
+            <h3
+              className={cn(
+                "mb-4 text-sm font-semibold",
+                isDark ? "text-white" : "text-slate-900"
+              )}
+            >
               Resources
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <FooterLink href={link.href}>{link.label}</FooterLink>
+                  <FooterLink href={link.href} isDark={isDark}>
+                    {link.label}
+                  </FooterLink>
                 </li>
               ))}
             </ul>
@@ -70,13 +104,20 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-foreground mb-4 text-sm font-semibold">
+            <h3
+              className={cn(
+                "mb-4 text-sm font-semibold",
+                isDark ? "text-white" : "text-slate-900"
+              )}
+            >
               Legal
             </h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
-                  <FooterLink href={link.href}>{link.label}</FooterLink>
+                  <FooterLink href={link.href} isDark={isDark}>
+                    {link.label}
+                  </FooterLink>
                 </li>
               ))}
             </ul>
@@ -84,13 +125,28 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-border mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 sm:flex-row">
-          <p className="text-muted-foreground text-sm">
+        <div
+          className={cn(
+            "mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 sm:flex-row",
+            isDark ? "border-white/5" : "border-slate-200"
+          )}
+        >
+          <p
+            className={cn(
+              "text-sm",
+              isDark ? "text-slate-500" : "text-slate-400"
+            )}
+          >
             © {currentYear} SifrApps. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-xs">
+          <p
+            className={cn(
+              "text-xs",
+              isDark ? "text-slate-600" : "text-slate-400"
+            )}
+          >
             Built with{" "}
-            <span className="text-primary" aria-label="precision">
+            <span className="text-emerald-500" aria-label="precision">
               ∞
             </span>{" "}
             logical precision
@@ -104,14 +160,21 @@ export function Footer() {
 function FooterLink({
   href,
   children,
+  isDark,
 }: {
   href: string;
   children: React.ReactNode;
+  isDark: boolean;
 }) {
   return (
     <Link
       href={href}
-      className="text-muted-foreground hover:text-foreground focus:ring-ring focus:ring-offset-background rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
+      className={cn(
+        "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
+        isDark
+          ? "text-slate-400 hover:text-white focus:ring-emerald-500 focus:ring-offset-[#020617]"
+          : "text-slate-500 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
+      )}
     >
       {children}
     </Link>
@@ -140,7 +203,7 @@ function SifrLogoSmall() {
         cy="16"
         r="4"
         fill="currentColor"
-        className="text-primary"
+        className="text-emerald-500"
       />
     </svg>
   );
