@@ -8,7 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 /**
  * Throttles a function based on frame rate for better performance in animations.
  */
-export function rafThrottle<T extends (...args: unknown[]) => void>(fn: T) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function rafThrottle<T extends (...args: any[]) => void>(fn: T) {
   let locked = false;
   return function (this: unknown, ...args: Parameters<T>) {
     if (locked) return;
