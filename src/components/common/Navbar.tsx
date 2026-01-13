@@ -127,13 +127,13 @@ export function Navbar({
           {/* Navigation Links (Desktop) */}
           {!customBranding && (
             <div className="hidden items-center gap-10 md:flex">
-              <NavLink href="#apps" isDark={isDark}>
+              <NavLink href="/apps" isDark={isDark}>
                 Ecosystem
               </NavLink>
-              <NavLink href="#solutions" isDark={isDark}>
+              <NavLink href="/solutions" isDark={isDark}>
                 Expertise
               </NavLink>
-              <NavLink href="#about" isDark={isDark}>
+              <NavLink href="/about" isDark={isDark}>
                 Philosophy
               </NavLink>
             </div>
@@ -155,7 +155,7 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="#contact">Get in Touch</Link>
+                  <Link href="/about">Get in Touch</Link>
                 </Button>
               )}
             </div>
@@ -190,21 +190,21 @@ export function Navbar({
               {!customBranding && (
                 <>
                   <MobileNavLink
-                    href="#apps"
+                    href="/apps"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
                     Ecosystem
                   </MobileNavLink>
                   <MobileNavLink
-                    href="#solutions"
+                    href="/solutions"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
                     Expertise
                   </MobileNavLink>
                   <MobileNavLink
-                    href="#about"
+                    href="/about"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
@@ -228,7 +228,7 @@ export function Navbar({
                         : "bg-slate-900 text-white hover:bg-slate-800"
                     )}
                   >
-                    <Link href="#contact">Get in Touch</Link>
+                    <Link href="/about">Get in Touch</Link>
                   </Button>
                 )}
               </div>

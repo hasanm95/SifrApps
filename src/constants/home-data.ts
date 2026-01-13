@@ -62,7 +62,7 @@ export const PILLARS = [
     iconName: "Calculator",
   },
   {
-    title: "Invasive Inclusion",
+    title: "Radical Accessibility",
     label: "WCAG 2.1 First",
     description:
       "Accessibility is not a feature; it's the foundation. We build software that respects every user's capabilities.",

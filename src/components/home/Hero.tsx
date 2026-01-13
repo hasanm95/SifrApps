@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useParallax } from "@/hooks/useParallax";
@@ -50,10 +51,10 @@ export function Hero() {
 
       {/* Decorative Elite Grid */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        className="pointer-events-none absolute inset-0 opacity-[0.05]"
         style={{
           backgroundImage:
-            "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
+            "linear-gradient(#e2e8f0 1px, transparent 1px), linear-gradient(90deg, #e2e8f0 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }}
       />
@@ -99,7 +100,7 @@ export function Hero() {
               className="magnetic-btn h-16 w-full rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white shadow-2xl transition-all duration-500 hover:scale-110 hover:bg-emerald-600 active:scale-95 sm:w-auto"
               asChild
             >
-              <a href="#apps">View Portfolio</a>
+              <Link href="/apps">View Portfolio</Link>
             </Button>
             <Button
               size="lg"
@@ -107,12 +108,12 @@ export function Hero() {
               className="magnetic-btn group h-16 w-full rounded-2xl px-12 text-lg font-bold text-slate-900 backdrop-blur-sm transition-all hover:bg-white/50 sm:w-auto"
               asChild
             >
-              <a href="#about">
+              <Link href="/about">
                 Our Methodology
                 <span className="ml-2 inline-block transition-transform group-hover:translate-x-2">
                   →
                 </span>
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

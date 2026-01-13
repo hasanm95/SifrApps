@@ -3,18 +3,19 @@ import { cn } from "@/lib/utils";
 
 const footerLinks = {
   solutions: [
-    { label: "E-commerce Growth", href: "#solutions" },
-    { label: "Digital Productivity", href: "#solutions" },
-    { label: "Accessibility Consulting", href: "#solutions" },
+    { label: "E-commerce Optimization", href: "/solutions" },
+    { label: "Digital Discipline Design", href: "/solutions" },
+    { label: "Radical Accessibility", href: "/solutions" },
   ],
   resources: [
-    { label: "Comparison Guides", href: "#" },
-    { label: "Support", href: "#" },
-    { label: "Documentation", href: "#" },
+    { label: "Our Ecosystem", href: "/apps" },
+    { label: "The Methodology", href: "/about" },
+    { label: "Comparison Guides", href: "/compare" },
+    { label: "The Logic Lab (Blog)", href: "/blog" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms of Service", href: "/terms" },
+    { label: "Privacy Policy", href: "/about" }, // Placeholder until legal pages are created
+    { label: "Terms of Service", href: "/about" },
   ],
 };
 
