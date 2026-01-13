@@ -30,6 +30,9 @@ export async function generateMetadata({
       description: data.heroSubheadline,
       type: "website",
     },
+    alternates: {
+      canonical: `https://sifrapps.com/compare/${slug}`,
+    },
   };
 }
 
@@ -39,8 +42,36 @@ export default async function ComparisonPage({ params }: PageProps) {
 
   if (!data) notFound();
 
+  // JSON-LD for Comparison/Product
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: data.heroHeadline,
+    description: data.heroSubheadline,
+    author: {
+      "@type": "Organization",
+      name: "SifrApps",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "SifrApps",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://sifrapps.com/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://sifrapps.com/compare/${slug}`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar
         variant="light"
         customBranding={

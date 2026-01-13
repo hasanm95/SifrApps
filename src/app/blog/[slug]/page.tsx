@@ -42,6 +42,9 @@ export async function generateMetadata({
         },
       ],
     },
+    alternates: {
+      canonical: `https://sifrapps.com/blog/${slug}`,
+    },
   };
 }
 
@@ -55,8 +58,37 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const contentHtml = await markdownToHtml(post.content || "");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: post.thumbnail,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "SifrApps",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://sifrapps.com/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://sifrapps.com/blog/${slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ReadingProgressBar />
       <Navbar />
       <main className="flex-1 bg-white pt-20">
