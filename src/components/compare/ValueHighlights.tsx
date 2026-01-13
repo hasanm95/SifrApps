@@ -30,12 +30,15 @@ export function ValueHighlights() {
               className="group rounded-3xl border border-slate-200 bg-white p-10 transition-all hover:border-emerald-500/30"
             >
               <div className="mb-8 w-fit rounded-2xl bg-emerald-500/10 p-4 transition-colors group-hover:bg-emerald-500/20">
-                {card.icon}
+                {/* Clone elements to add aria-hidden */}
+                {Object.assign({}, card.icon, {
+                  props: { ...card.icon.props, "aria-hidden": true },
+                })}
               </div>
               <h4 className="mb-4 text-xl font-black text-slate-900">
                 {card.title}
               </h4>
-              <p className="leading-relaxed font-medium text-slate-500">
+              <p className="leading-relaxed font-medium text-slate-600">
                 {card.desc}
               </p>
             </div>

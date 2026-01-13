@@ -12,7 +12,10 @@ export function CompareTestimonial({ quote, author, role }: TestimonialProps) {
     <Section className="bg-white py-24">
       <div className="section-container">
         <div className="relative mx-auto max-w-4xl rounded-[3rem] border border-emerald-100 bg-emerald-50 p-12 text-center md:p-20">
-          <Quote className="absolute top-12 left-1/2 h-12 w-12 -translate-x-1/2 text-emerald-200" />
+          <Quote
+            className="absolute top-12 left-1/2 h-12 w-12 -translate-x-1/2 text-emerald-200"
+            aria-hidden="true"
+          />
           <p className="relative z-10 mb-12 text-2xl leading-tight font-black text-slate-900 italic md:text-3xl">
             &quot;{quote}&quot;
           </p>

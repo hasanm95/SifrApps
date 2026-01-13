@@ -40,11 +40,11 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         )}
       >
         <div className="mb-6 flex items-center gap-3">
-          <span className="text-[10px] font-black tracking-widest text-emerald-600 uppercase">
+          <span className="text-[10px] font-black tracking-widest text-emerald-800 uppercase">
             {post.category}
           </span>
           <span className="h-1 w-1 rounded-full bg-slate-200" />
-          <span className="text-[10px] font-bold text-slate-400">
+          <span className="text-[10px] font-bold text-slate-500">
             {post.date}
           </span>
         </div>
@@ -60,7 +60,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
 
         <p
           className={cn(
-            "line-clamp-2 leading-relaxed font-medium text-slate-500",
+            "line-clamp-2 leading-relaxed font-medium text-slate-600",
             isHero ? "mb-10 text-xl" : "text-base"
           )}
         >

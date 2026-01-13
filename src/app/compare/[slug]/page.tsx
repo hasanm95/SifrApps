@@ -76,10 +76,10 @@ export default async function ComparisonPage({ params }: PageProps) {
         variant="light"
         customBranding={
           <div className="flex items-center gap-3">
-            <span className="text-[10px] font-black tracking-widest text-emerald-600 uppercase">
+            <span className="text-[10px] font-black tracking-widest text-emerald-800 uppercase">
               {data.productName}
             </span>
-            <span className="text-[10px] font-medium text-slate-400">vs</span>
+            <span className="text-[10px] font-medium text-slate-500">vs</span>
             <span className="text-[10px] font-black tracking-widest text-slate-900 uppercase">
               {data.competitorName}
             </span>

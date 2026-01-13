@@ -52,7 +52,7 @@ export function Footer({ variant = "light" }: FooterProps) {
             <p
               className={cn(
                 "mt-4 max-w-xs text-sm",
-                isDark ? "text-slate-400" : "text-slate-500"
+                isDark ? "text-slate-400" : "text-slate-600"
               )}
             >
               Logic-driven software where mathematical precision meets
@@ -134,7 +134,7 @@ export function Footer({ variant = "light" }: FooterProps) {
           <p
             className={cn(
               "text-sm",
-              isDark ? "text-slate-500" : "text-slate-400"
+              isDark ? "text-slate-500" : "text-slate-600"
             )}
           >
             © {currentYear} SifrApps. All rights reserved.
@@ -173,7 +173,7 @@ function FooterLink({
         "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
         isDark
           ? "text-slate-400 hover:text-white focus:ring-emerald-500 focus:ring-offset-[#020617]"
-          : "text-slate-500 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
+          : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
       )}
     >
       {children}

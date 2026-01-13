@@ -36,14 +36,14 @@ export function AppCallout({ appName }: AppCalloutProps) {
         className={`absolute top-0 right-0 h-24 w-24 ${data.color} translate-x-12 -translate-y-12 rounded-full opacity-[0.03] blur-2xl transition-opacity group-hover:opacity-[0.1]`}
       />
 
-      <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase">
+      <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-slate-500 uppercase">
         Powered by Logic
       </span>
 
       <h4 className="mb-2 text-2xl font-black text-slate-900">{data.title}</h4>
-      <p className="mb-6 text-sm font-bold text-slate-500">{data.sub}</p>
+      <p className="mb-6 text-sm font-bold text-slate-600">{data.sub}</p>
 
-      <p className="mb-8 text-sm leading-relaxed font-medium text-slate-500">
+      <p className="mb-8 text-sm leading-relaxed font-medium text-slate-600">
         {data.desc}
       </p>
 

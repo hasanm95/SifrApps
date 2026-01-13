@@ -97,18 +97,18 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="section-container relative z-10">
             <Link
               href="/blog"
-              className="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-emerald-600 uppercase transition-transform hover:-translate-x-1"
+              className="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-emerald-800 uppercase transition-transform hover:-translate-x-1"
             >
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
               Back to Archive
             </Link>
 
             <div className="mb-8 flex items-center gap-3">
-              <span className="rounded-full bg-emerald-500/10 px-4 py-1.5 text-[10px] font-black tracking-widest text-emerald-700 uppercase">
+              <span className="rounded-full bg-emerald-500/10 px-4 py-1.5 text-[10px] font-black tracking-widest text-emerald-800 uppercase">
                 {post.category}
               </span>
               <span className="h-1 w-1 rounded-full bg-slate-200" />
-              <span className="text-[10px] font-bold text-slate-400">
+              <span className="text-[10px] font-bold text-slate-500">
                 {post.date}
               </span>
             </div>
@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <p className="text-sm font-black text-slate-900">
                   {post.author}
                 </p>
-                <p className="text-xs font-bold text-slate-400">
+                <p className="text-xs font-bold text-slate-500">
                   Article Author
                 </p>
               </div>
@@ -161,7 +161,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                       {["Twitter", "LinkedIn", "Copy"].map((platform) => (
                         <button
                           key={platform}
-                          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-400 transition-all hover:border-emerald-500 hover:text-emerald-600"
+                          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-emerald-500 hover:text-emerald-600"
                         >
                           <span className="sr-only">{platform}</span>
                           <div className="h-4 w-4 bg-current opacity-20" />

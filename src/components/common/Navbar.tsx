@@ -136,7 +136,7 @@ function NavLink({
         "focus-ring rounded-md py-1 text-sm font-bold transition-all",
         isDark
           ? "text-slate-400 hover:text-white"
-          : "text-slate-500 hover:text-slate-900"
+          : "text-slate-600 hover:text-slate-900"
       )}
     >
       {children}
