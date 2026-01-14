@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sasswave | Logic-Driven Software Studio",
+  title: "Sasswave | High-Performance Software Engineering",
   description:
-    "At Sasswave, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact.",
+    "At Sasswave, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.",
   keywords: [
     "software studio",
     "Shopify apps",

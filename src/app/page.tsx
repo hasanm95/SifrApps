@@ -2,8 +2,10 @@ import { Navbar, Footer } from "@/components/common";
 import {
   Hero,
   FoundersMoat,
+  FomoGenFeatured,
   ProductGrid,
   SolutionsSection,
+  TechnicalFAQ,
 } from "@/components/home";
 
 export default function Home() {
@@ -12,8 +14,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FoundersMoat />
+      <FomoGenFeatured />
       <ProductGrid />
       <SolutionsSection />
+      <TechnicalFAQ />
       <Footer />
     </>
   );

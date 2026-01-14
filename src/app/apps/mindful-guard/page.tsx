@@ -7,9 +7,9 @@ import { TechSpecs } from "@/components/apps/TechSpecs";
 import { FAQSection } from "@/components/apps/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Mindful Guard | Reclaim Your Focus with Logical Guardrails",
+  title: "Mindful Guard | Privacy-First Android App Blocker",
   description:
-    "Mindful Guard is a precision-engineered Android utility designed to break the loop of digital distraction using intentional friction and mathematical discipline.",
+    "Precision-engineered focus for Android. Reclaim your digital sovereignty with zero ads, zero tracking, and mathematical discipline.",
   keywords: [
     "Productivity",
     "Digital Wellness",

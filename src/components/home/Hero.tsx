@@ -72,25 +72,23 @@ export function Hero() {
 
           {/* Massive Display Headline */}
           <h1 className="parallax-headline text-display mb-10">
-            Software Engineered with
+            High-Performance Apps.
             <br />
             <span className="animate-scanline group relative inline-block text-slate-300">
-              Logical Precision.
+              Engineered for the Micro-second.
               <div className="absolute -bottom-4 left-0 h-[6px] w-full rounded-full bg-blue-600/20 blur-sm transition-colors group-hover:bg-blue-600/40" />
             </span>
           </h1>
 
           {/* Subtext with Elite Contrast */}
           <p className="parallax-subtext mx-auto mt-12 max-w-3xl text-xl leading-tight font-medium tracking-tight text-balance text-slate-500 md:text-2xl">
-            At Sasswave, we bridge the gap between{" "}
+            Stop letting bloated software slow down your growth.{" "}
+            <span className="text-slate-900">Sasswave</span> builds elite-tier
+            Shopify and Mobile tools driven by{" "}
             <span className="border-b-2 border-blue-600/30 text-slate-900">
-              complex mathematics
+              mathematical precision
             </span>{" "}
-            and{" "}
-            <span className="text-slate-900 italic">
-              human-centric software
-            </span>
-            .
+            and 7 years of full-stack expertise.
           </p>
 
           {/* Elite CTAs */}
@@ -100,7 +98,7 @@ export function Hero() {
               className="magnetic-btn h-16 w-full rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white shadow-2xl transition-all duration-500 hover:scale-110 hover:bg-blue-600 active:scale-95 sm:w-auto"
               asChild
             >
-              <Link href="/apps">View Portfolio</Link>
+              <Link href="/apps">Explore our Apps</Link>
             </Button>
             <Button
               size="lg"
@@ -108,8 +106,8 @@ export function Hero() {
               className="magnetic-btn group h-16 w-full rounded-2xl px-12 text-lg font-bold text-slate-900 backdrop-blur-sm transition-all hover:bg-white/50 sm:w-auto"
               asChild
             >
-              <Link href="/about">
-                Our Methodology
+              <Link href="/blog">
+                View the Logic Lab
                 <span className="ml-2 inline-block transition-transform group-hover:translate-x-2">
                   →
                 </span>

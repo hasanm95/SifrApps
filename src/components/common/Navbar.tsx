@@ -133,8 +133,8 @@ export function Navbar({
               <NavLink href="/solutions" isDark={isDark}>
                 Expertise
               </NavLink>
-              <NavLink href="/about" isDark={isDark}>
-                Philosophy
+              <NavLink href="/blog" isDark={isDark}>
+                Logic Lab
               </NavLink>
             </div>
           )}
@@ -204,11 +204,11 @@ export function Navbar({
                     Expertise
                   </MobileNavLink>
                   <MobileNavLink
-                    href="/about"
+                    href="/blog"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
-                    Philosophy
+                    Logic Lab
                   </MobileNavLink>
                 </>
               )}

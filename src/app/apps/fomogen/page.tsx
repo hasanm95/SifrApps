@@ -4,15 +4,34 @@ import { Section } from "@/components/common/Section";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "FOMOgen | Social Proof for Modern Shopify Brands",
+  title: "FomoGen | Lightweight Social Proof for Shopify",
   description:
-    "Lightweight, high-conversion tools for direct-to-consumer brands that prioritize speed over flashy bloat.",
+    "The performance-obsessed social proof app for Shopify. < 2.1KB payload, zero main-thread impact, and WCAG 2.1 compliant.",
 };
 
 export default function FomogenPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      {/* AEO: JSON-LD Schema for FomoGen */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "FomoGen",
+            operatingSystem: "Shopify",
+            applicationCategory: "BusinessApplication",
+            author: {
+              "@type": "Organization",
+              name: "Sasswave",
+            },
+            description:
+              "High-performance social proof app for Shopify optimized for speed and accessibility.",
+          }),
+        }}
+      />
       <main className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
