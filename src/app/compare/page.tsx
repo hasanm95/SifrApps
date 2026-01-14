@@ -6,9 +6,9 @@ import { comparisons } from "@/lib/compare";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Comparison Guides | SifrApps Analysis",
+  title: "Comparison Guides | Sasswave Analysis",
   description:
-    "Logic-first product comparisons. Why elite teams choose SifrApps over legacy alternatives.",
+    "Logic-first product comparisons. Why elite teams choose Sasswave over legacy alternatives.",
 };
 
 export default function CompareIndexPage() {
@@ -18,7 +18,7 @@ export default function CompareIndexPage() {
       <main className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
-            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-800 uppercase">
+            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
               Analytical Logic
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
@@ -37,7 +37,7 @@ export default function CompareIndexPage() {
               <Link
                 key={c.slug}
                 href={`/compare/${c.slug}`}
-                className="group flex items-center justify-between rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 transition-all hover:border-emerald-500/20 hover:bg-white hover:shadow-xl"
+                className="group flex items-center justify-between rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 transition-all hover:border-blue-500/20 hover:bg-white hover:shadow-xl"
               >
                 <div>
                   <span className="mb-2 block text-[10px] font-black tracking-widest text-slate-400 uppercase">
@@ -48,7 +48,7 @@ export default function CompareIndexPage() {
                     {c.competitorName}
                   </h2>
                 </div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-900 transition-all group-hover:bg-emerald-500 group-hover:text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-900 transition-all group-hover:bg-blue-600 group-hover:text-white">
                   <ArrowRight size={20} />
                 </div>
               </Link>
@@ -65,9 +65,9 @@ export default function CompareIndexPage() {
             </p>
             <Link
               href="/apps"
-              className="inline-flex h-16 items-center justify-center rounded-2xl bg-emerald-500 px-12 text-lg font-bold text-white transition-all hover:scale-105 hover:bg-emerald-400"
+              className="inline-flex h-16 items-center justify-center rounded-2xl bg-blue-600 px-12 text-lg font-bold text-white transition-all hover:scale-105 hover:bg-blue-500"
             >
-              Download Mindful Guard
+              Explore Ecosystem
             </Link>
           </div>
         </Section>

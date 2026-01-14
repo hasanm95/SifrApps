@@ -20,7 +20,7 @@ export function FoundersMoat() {
 
       <div className="relative z-10 mb-24 flex flex-col items-end gap-12 md:mb-32 md:flex-row">
         <div className="flex-1">
-          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-600 uppercase">
+          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase">
             Internal Architecture
           </span>
           <h2 className="text-5xl leading-tight font-black tracking-tight text-slate-900 md:text-6xl">
@@ -29,7 +29,7 @@ export function FoundersMoat() {
           </h2>
         </div>
         <div className="max-w-sm flex-none">
-          <p className="border-l-4 border-emerald-500/20 pl-6 text-lg leading-relaxed font-medium text-slate-500 italic">
+          <p className="border-l-4 border-blue-600/20 pl-6 text-lg leading-relaxed font-medium text-slate-500 italic">
             Derived from the mathematical origin, we build from zero-trust and
             first principles to ensure your software is elite.
           </p>

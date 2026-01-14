@@ -5,7 +5,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPosts, getBlogCategories } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "The Logic Lab | SifrApps Blog",
+  title: "The Logic Lab | Sasswave Blog",
   description:
     "Deep dives into software engineering, mathematics, and digital productivity.",
 };
@@ -30,7 +30,7 @@ export default function BlogArchivePage() {
               {categories.map((category) => (
                 <button
                   key={category}
-                  className="rounded-full border border-slate-200 bg-white px-6 py-2 text-sm font-bold text-slate-500 transition-all hover:border-emerald-500 hover:text-emerald-600"
+                  className="rounded-full border border-slate-200 bg-white px-6 py-2 text-sm font-bold text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
                 >
                   {category}
                 </button>

@@ -20,10 +20,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const data = getComparisonBySlug(slug);
 
-  if (!data) return { title: "Comparison Not Found | SifrApps" };
+  if (!data) return { title: "Comparison Found | Sasswave" };
 
   return {
-    title: `${data.productName} vs ${data.competitorName} | SifrApps`,
+    title: `${data.productName} vs ${data.competitorName} | Sasswave`,
     description: `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`,
     openGraph: {
       title: `${data.productName} vs ${data.competitorName}`,
@@ -31,7 +31,7 @@ export async function generateMetadata({
       type: "website",
     },
     alternates: {
-      canonical: `https://sifrapps.com/compare/${slug}`,
+      canonical: `https://sasswave.com/compare/${slug}`,
     },
   };
 }
@@ -50,19 +50,19 @@ export default async function ComparisonPage({ params }: PageProps) {
     description: data.heroSubheadline,
     author: {
       "@type": "Organization",
-      name: "SifrApps",
+      name: "Sasswave",
     },
     publisher: {
       "@type": "Organization",
-      name: "SifrApps",
+      name: "Sasswave",
       logo: {
         "@type": "ImageObject",
-        url: "https://sifrapps.com/logo.png",
+        url: "https://sasswave.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://sifrapps.com/compare/${slug}`,
+      "@id": `https://sasswave.com/compare/${slug}`,
     },
   };
 
@@ -76,7 +76,7 @@ export default async function ComparisonPage({ params }: PageProps) {
         variant="light"
         customBranding={
           <div className="flex items-center gap-3">
-            <span className="text-[10px] font-black tracking-widest text-emerald-800 uppercase">
+            <span className="text-[10px] font-black tracking-widest text-blue-800 uppercase">
               {data.productName}
             </span>
             <span className="text-[10px] font-medium text-slate-500">vs</span>
@@ -104,7 +104,7 @@ export default async function ComparisonPage({ params }: PageProps) {
           features={data.matrix}
         />
 
-        <TechnicalDebt legacy={data.legacyWay} sifr={data.sifrWay} />
+        <TechnicalDebt legacy={data.legacyWay} sasswave={data.sasswaveWay} />
 
         <ValueHighlights />
 

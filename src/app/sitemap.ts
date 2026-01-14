@@ -5,7 +5,7 @@ import { comparisons } from "@/lib/compare";
 export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://sifrapps.com";
+  const baseUrl = "https://sasswave.com";
 
   // Static routes
   const routes = ["", "/blog"].map((route) => ({

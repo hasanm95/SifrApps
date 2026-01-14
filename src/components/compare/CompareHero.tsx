@@ -10,7 +10,7 @@ export function CompareHero({ headline, subheadline }: CompareHeroProps) {
   return (
     <Section className="bg-iridescent border-b border-slate-100 pt-32 pb-20">
       <div className="relative z-10 flex flex-col items-center text-center">
-        <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-800 uppercase">
+        <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
           Analytical Choice
         </span>
         <h1 className="text-display mb-8 max-w-5xl text-slate-900">

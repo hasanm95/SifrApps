@@ -47,8 +47,8 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <SifrLogoSmall />
-              <span>SifrApps</span>
+              <SasswaveLogoSmall />
+              <span>Sasswave</span>
             </Link>
             <p
               className={cn(
@@ -138,7 +138,7 @@ export function Footer({ variant = "light" }: FooterProps) {
               isDark ? "text-slate-500" : "text-slate-600"
             )}
           >
-            © {currentYear} SifrApps. All rights reserved.
+            © {currentYear} Sasswave. All rights reserved.
           </p>
           <p
             className={cn(
@@ -147,7 +147,7 @@ export function Footer({ variant = "light" }: FooterProps) {
             )}
           >
             Built with{" "}
-            <span className="text-emerald-500" aria-label="precision">
+            <span className="text-blue-600" aria-label="precision">
               ∞
             </span>{" "}
             logical precision
@@ -173,7 +173,7 @@ function FooterLink({
       className={cn(
         "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
         isDark
-          ? "text-slate-400 hover:text-white focus:ring-emerald-500 focus:ring-offset-[#020617]"
+          ? "text-slate-400 hover:text-white focus:ring-blue-600 focus:ring-offset-[#020617]"
           : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
       )}
     >
@@ -182,7 +182,7 @@ function FooterLink({
   );
 }
 
-function SifrLogoSmall() {
+function SasswaveLogoSmall() {
   return (
     <svg
       className="h-6 w-6"
@@ -204,7 +204,7 @@ function SifrLogoSmall() {
         cy="16"
         r="4"
         fill="currentColor"
-        className="text-emerald-500"
+        className="text-blue-600"
       />
     </svg>
   );

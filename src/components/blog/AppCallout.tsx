@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 interface AppCalloutProps {
-  appName: "Mindful Guard" | "FOMOgen" | "SifrApps";
+  appName: "Mindful Guard" | "FOMOgen" | "Sasswave";
 }
 
 export function AppCallout({ appName }: AppCalloutProps) {
@@ -19,9 +19,9 @@ export function AppCallout({ appName }: AppCalloutProps) {
       sub: "Sales Simplified.",
       desc: "The #1 Shopify app for social proof automation.",
       href: "/apps/fomogen",
-      color: "bg-emerald-600",
+      color: "bg-blue-600",
     },
-    SifrApps: {
+    Sasswave: {
       title: "The Logic Lab",
       sub: "First Principles.",
       desc: "Get engineering insights delivered to your inbox.",

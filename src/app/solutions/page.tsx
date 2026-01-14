@@ -5,7 +5,7 @@ import { SOLUTIONS } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Solutions | SifrApps Expertise",
+  title: "Solutions | Sasswave Expertise",
   description:
     "Logical solutions for complex business bottlenecks. Engineering systemic improvements in E-commerce and digital productivity.",
 };
@@ -23,7 +23,7 @@ export default function SolutionsPage() {
       <main className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
-            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-800 uppercase">
+            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
               Execution Vectors
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
@@ -43,9 +43,9 @@ export default function SolutionsPage() {
               return (
                 <div
                   key={idx}
-                  className="group rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-12 transition-all hover:border-emerald-500/20 hover:bg-white hover:shadow-xl"
+                  className="group rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-12 transition-all hover:border-blue-500/20 hover:bg-white hover:shadow-xl"
                 >
-                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-600 transition-colors group-hover:bg-emerald-500 group-hover:text-white">
+                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
                     <Icon size={32} />
                   </div>
                   <h2 className="mb-6 text-2xl font-black text-slate-900">

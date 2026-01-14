@@ -14,7 +14,7 @@ export interface Product {
 }
 
 export function ProductCard({ product }: { product: Product }) {
-  const isEmerald = product.color === "emerald";
+  const isBlue = product.color === "blue";
 
   return (
     <div
@@ -26,9 +26,9 @@ export function ProductCard({ product }: { product: Product }) {
       <div
         className={cn(
           "absolute top-0 left-0 h-1.5 w-full rounded-t-full transition-all duration-500",
-          isEmerald
-            ? "bg-emerald-500 group-hover:h-3"
-            : "bg-blue-500 group-hover:h-3"
+          isBlue
+            ? "bg-blue-600 group-hover:h-3"
+            : "bg-slate-500 group-hover:h-3"
         )}
       />
 
@@ -45,9 +45,9 @@ export function ProductCard({ product }: { product: Product }) {
           <div
             className={cn(
               "rounded-full border px-4 py-1 text-[10px] font-bold",
-              isEmerald
-                ? "border-emerald-100 bg-emerald-50 text-emerald-600"
-                : "border-blue-100 bg-blue-50 text-blue-600"
+              isBlue
+                ? "border-blue-100 bg-blue-50 text-blue-600"
+                : "border-slate-100 bg-slate-50 text-slate-600"
             )}
           >
             Active Deploy
@@ -77,9 +77,9 @@ export function ProductCard({ product }: { product: Product }) {
         <Button
           className={cn(
             "h-14 w-full rounded-2xl font-bold transition-all duration-500",
-            isEmerald
-              ? "bg-emerald-600 text-white shadow-lg shadow-emerald-200 hover:bg-emerald-700"
-              : "bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700"
+            isBlue
+              ? "bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700"
+              : "bg-slate-600 text-white shadow-lg shadow-slate-200 hover:bg-slate-700"
           )}
         >
           {product.cta}

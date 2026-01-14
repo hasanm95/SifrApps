@@ -23,7 +23,7 @@ A notification is an interrupt, but it isn't a block. In programming terms, most
 
 ## Enter Mindful Guard: Engineering Intentional Friction
 
-At SifrApps, we built Mindful Guard based on a simple mathematical principle: Intentional Friction. If the cost of accessing a distracting app is near zero (one tap), the probability of you opening it is near 100%. By introducing a logical barrier—a moment of friction—we force the brain to switch from "System 1" (automatic/impulsive) to "System 2" (logical/deliberate) thinking.
+At Sasswave, we built Mindful Guard based on a simple mathematical principle: Intentional Friction. If the cost of accessing a distracting app is near zero (one tap), the probability of you opening it is near 100%. By introducing a logical barrier—a moment of friction—we force the brain to switch from "System 1" (automatic/impulsive) to "System 2" (logical/deliberate) thinking.
 
 ## The Three Pillars of the Mindful Guard Logic:
 

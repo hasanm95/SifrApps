@@ -100,7 +100,7 @@ export function Navbar({
               className="group focus-ring flex items-center gap-2 rounded-lg px-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 font-bold text-white transition-colors group-hover:bg-emerald-700">
+              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 font-bold text-white transition-colors group-hover:bg-blue-700">
                 S
               </div>
               {!customBranding && (
@@ -110,7 +110,7 @@ export function Navbar({
                     isDark ? "text-white" : "text-slate-900"
                   )}
                 >
-                  SifrApps
+                  Sasswave
                 </span>
               )}
             </Link>
@@ -235,8 +235,8 @@ export function Navbar({
             </div>
 
             <div className="mt-auto flex justify-center pb-12">
-              <span className="text-[10px] font-black tracking-[0.3em] text-emerald-600 uppercase">
-                SifrApps Logic System
+              <span className="text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+                Sasswave Logic System
               </span>
             </div>
           </div>

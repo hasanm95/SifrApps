@@ -26,7 +26,7 @@ export function ScienceSection() {
               </p>
             </div>
             <div className="flex items-start gap-4">
-              <div className="mt-1.5 h-2 w-2 rounded-full bg-emerald-500" />
+              <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-600" />
               <p className="font-bold text-slate-900">Enable Cognitive Reset</p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export function ScienceSection() {
                 <div className="absolute -top-4 -left-4 flex h-12 w-12 items-center justify-center rounded-xl border border-slate-100 bg-white font-black text-[#7C3AED] shadow-lg">
                   P1
                 </div>
-                <div className="absolute -right-4 -bottom-4 flex h-12 w-12 items-center justify-center rounded-xl border border-slate-100 bg-white font-black text-emerald-500 shadow-lg">
+                <div className="absolute -right-4 -bottom-4 flex h-12 w-12 items-center justify-center rounded-xl border border-slate-100 bg-white font-black text-blue-600 shadow-lg">
                   P2
                 </div>
               </div>

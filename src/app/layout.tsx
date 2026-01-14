@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SifrApps | Logic-Driven Software Studio",
+  title: "Sasswave | Logic-Driven Software Studio",
   description:
-    "From Shopify conversion tools to mindful mobile experiences, we build software where mathematical precision meets human-centric design. Founded by a mathematician with 7 years of full-stack expertise.",
+    "At Sasswave, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact.",
   keywords: [
     "software studio",
     "Shopify apps",
@@ -19,29 +19,30 @@ export const metadata: Metadata = {
     "accessibility",
     "WCAG",
     "web development",
+    "Sasswave",
   ],
-  authors: [{ name: "SifrApps" }],
-  creator: "SifrApps",
+  authors: [{ name: "Sasswave" }],
+  creator: "Sasswave",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sifrapps.com",
-    siteName: "SifrApps",
-    title: "SifrApps | Logic-Driven Software Studio",
+    url: "https://sasswave.com",
+    siteName: "Sasswave",
+    title: "Sasswave | Logic-Driven Software Studio",
     description:
-      "Mathematical precision meets human-centric design. We build high-performance apps for the modern web.",
+      "Mathematical precision meets human-centric design. We build the Next Wave of digital performance.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SifrApps - Logic-Driven Software Studio",
+        alt: "Sasswave - Logic-Driven Software Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SifrApps | Logic-Driven Software Studio",
+    title: "Sasswave | Logic-Driven Software Studio",
     description:
       "Mathematical precision meets human-centric design. We build high-performance apps for the modern web.",
     images: ["/og-image.png"],
@@ -74,8 +75,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "SifrApps",
-              url: "https://sifrapps.com",
+              name: "Sasswave",
+              url: "https://sasswave.com",
               description:
                 "Logic-driven software studio building high-performance apps with mathematical precision.",
               foundingDate: "2019",

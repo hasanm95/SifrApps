@@ -6,7 +6,7 @@ import { PRODUCTS } from "@/constants/home-data";
 import { Section } from "@/components/common/Section";
 
 export const metadata: Metadata = {
-  title: "Our Apps | SifrApps Ecosystem",
+  title: "Our Apps | Sasswave Ecosystem",
   description:
     "Explore our suite of logic-driven applications designed for elite performance and digital discipline.",
 };
@@ -18,8 +18,8 @@ export default function AppsPage() {
       <main className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
-            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-800 uppercase">
-              Product Ecosystem
+            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
+              Sasswave Ecosystem
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
               Our <span className="text-slate-300">Ecosystem.</span>
@@ -36,7 +36,7 @@ export default function AppsPage() {
             {PRODUCTS.map((product) => (
               <div
                 key={product.id}
-                className="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-emerald-500/30 hover:shadow-2xl"
+                className="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
               >
                 <div className="aspect-[16/9] bg-slate-50 p-12">
                   {/* Placeholder for screenshot */}
@@ -47,7 +47,7 @@ export default function AppsPage() {
 
                 <div className="flex flex-1 flex-col p-10 lg:p-12">
                   <div className="mb-6 flex items-center justify-between">
-                    <span className="text-[10px] font-black tracking-widest text-emerald-800 uppercase">
+                    <span className="text-[10px] font-black tracking-widest text-blue-800 uppercase">
                       {product.platform}
                     </span>
                     <div className="flex gap-2">
@@ -72,7 +72,7 @@ export default function AppsPage() {
                   <div className="mt-auto">
                     <Button
                       asChild
-                      className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-emerald-600"
+                      className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
                     >
                       <Link
                         href={`/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`}

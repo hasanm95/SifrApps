@@ -30,7 +30,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         </div>
 
         {/* Subtle hover overlay */}
-        <div className="absolute inset-0 bg-emerald-600/0 transition-colors duration-500 group-hover:bg-emerald-600/5" />
+        <div className="absolute inset-0 bg-blue-600/0 transition-colors duration-500 group-hover:bg-blue-600/5" />
       </div>
 
       <div
@@ -40,7 +40,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         )}
       >
         <div className="mb-6 flex items-center gap-3">
-          <span className="text-[10px] font-black tracking-widest text-emerald-800 uppercase">
+          <span className="text-[10px] font-black tracking-widest text-blue-800 uppercase">
             {post.category}
           </span>
           <span className="h-1 w-1 rounded-full bg-slate-200" />
@@ -51,7 +51,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
 
         <h3
           className={cn(
-            "leading-tight font-black tracking-tight text-slate-900 transition-colors group-hover:text-emerald-700",
+            "leading-tight font-black tracking-tight text-slate-900 transition-colors group-hover:text-blue-700",
             isHero ? "mb-6 text-4xl md:text-5xl" : "mb-4 text-2xl"
           )}
         >

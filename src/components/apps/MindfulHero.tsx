@@ -75,7 +75,7 @@ export function MindfulHero() {
 
       {/* Floating Decorative Elements */}
       <div className="pointer-events-none absolute top-1/4 -right-20 h-80 w-80 animate-pulse rounded-full bg-purple-100/20 blur-[100px]" />
-      <div className="pointer-events-none absolute bottom-1/4 -left-20 h-80 w-80 animate-pulse rounded-full bg-emerald-100/10 blur-[100px] delay-700" />
+      <div className="pointer-events-none absolute bottom-1/4 -left-20 h-80 w-80 animate-pulse rounded-full bg-blue-100/10 blur-[100px] delay-700" />
     </section>
   );
 }

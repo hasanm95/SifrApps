@@ -45,7 +45,7 @@ export function ComparisonMatrix({
                 </th>
                 <th
                   scope="col"
-                  className="bg-emerald-50/5 p-8 text-xs font-black tracking-widest text-emerald-800 uppercase"
+                  className="bg-blue-50/5 p-8 text-xs font-black tracking-widest text-blue-800 uppercase"
                 >
                   {productName}
                 </th>
@@ -66,13 +66,13 @@ export function ComparisonMatrix({
                   <td className="p-8 text-sm font-medium text-slate-500">
                     {feature.competitorValue}
                   </td>
-                  <td className="bg-emerald-500/[0.02] p-8 text-sm font-black text-slate-900">
+                  <td className="bg-blue-500/[0.02] p-8 text-sm font-black text-slate-900">
                     <div className="flex items-center gap-3">
                       <Check
-                        className="h-4 w-4 text-emerald-600"
+                        className="h-4 w-4 text-blue-600"
                         aria-hidden="true"
                       />
-                      {feature.sifrValue}
+                      {feature.sasswaveValue}
                     </div>
                   </td>
                 </tr>
@@ -101,11 +101,11 @@ export function ComparisonMatrix({
                   </span>
                 </div>
                 <div className="flex items-center justify-between border-t border-slate-100 pt-4">
-                  <span className="text-xs font-black text-emerald-800">
+                  <span className="text-xs font-black text-blue-800">
                     {productName}
                   </span>
                   <span className="text-sm font-black text-slate-900">
-                    {feature.sifrValue}
+                    {feature.sasswaveValue}
                   </span>
                 </div>
               </div>

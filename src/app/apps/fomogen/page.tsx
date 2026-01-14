@@ -16,7 +16,7 @@ export default function FomogenPage() {
       <main className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
-            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-800 uppercase">
+            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
               Shopify Ecosystem
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
@@ -29,7 +29,7 @@ export default function FomogenPage() {
             <div className="mt-12">
               <Button
                 size="lg"
-                className="h-16 rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white transition-all hover:bg-emerald-600"
+                className="h-16 rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white transition-all hover:bg-blue-600"
               >
                 Optimize My Store
               </Button>

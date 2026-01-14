@@ -5,7 +5,7 @@ import { PILLARS } from "@/constants/home-data";
 import { Zap, Calculator, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About | The Sifr Methodology",
+  title: "About | The Sasswave Methodology",
   description:
     "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft.",
 };
@@ -23,16 +23,17 @@ export default function AboutPage() {
       <main className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
-            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-800 uppercase">
-              Our Methodology
+            <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
+              The Sasswave Methodology
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
               The <span className="text-slate-300">Methodology.</span>
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-              Founder-led development where mathematical integrity meets
-              high-end digital craft. We build from zero-trust and first
-              principles to ensure your software is elite.
+              At Sasswave, we bridge the gap between complex mathematics and
+              human-centric software. From high-conversion Shopify tools to
+              mindful mobile utilities, we build the &apos;Next Wave&apos; of
+              digital performance—zero bloat, maximum impact.
             </p>
           </div>
         </Section>
@@ -46,7 +47,7 @@ export default function AboutPage() {
             </div>
             <div className="flex-1">
               <p className="text-xl leading-relaxed font-medium text-slate-600">
-                SifrApps was founded on the belief that software should be a
+                Sasswave was founded on the belief that software should be a
                 derivation of logical truth. We avoid the
                 &quot;feature-first&quot; trap and focus on systemic integrity.
               </p>
@@ -61,7 +62,7 @@ export default function AboutPage() {
                   key={idx}
                   className="group rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-12 transition-all hover:border-emerald-500/20"
                 >
-                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-600 transition-colors group-hover:bg-emerald-500 group-hover:text-white">
+                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
                     <Icon size={32} />
                   </div>
                   <span className="mb-4 block text-[10px] font-black tracking-widest text-slate-400 uppercase">

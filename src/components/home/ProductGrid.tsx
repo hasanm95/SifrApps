@@ -7,7 +7,7 @@ export function ProductGrid() {
     <Section id="apps" className="bg-white">
       <div className="mb-16 flex flex-col items-end justify-between gap-8 md:mb-24 md:flex-row">
         <div className="max-w-2xl">
-          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-600 uppercase">
+          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase">
             Product Ecosystem
           </span>
           <h2 className="text-5xl leading-[1.1] font-bold tracking-tight text-slate-900 md:text-6xl">

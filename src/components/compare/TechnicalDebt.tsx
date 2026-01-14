@@ -8,10 +8,10 @@ interface Way {
 
 interface TechnicalDebtProps {
   legacy: Way;
-  sifr: Way;
+  sasswave: Way;
 }
 
-export function TechnicalDebt({ legacy, sifr }: TechnicalDebtProps) {
+export function TechnicalDebt({ legacy, sasswave }: TechnicalDebtProps) {
   return (
     <Section className="bg-white py-24">
       <div className="section-container">
@@ -40,17 +40,17 @@ export function TechnicalDebt({ legacy, sifr }: TechnicalDebtProps) {
 
           {/* Sifr Column */}
           <div className="relative overflow-hidden bg-slate-50 p-12 lg:p-20">
-            <div className="absolute top-0 right-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/5 blur-[120px]" />
+            <div className="absolute top-0 right-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/5 blur-[120px]" />
 
-            <h3 className="mb-12 text-sm font-black tracking-[0.2em] text-emerald-800 uppercase">
-              The Sifr Way
+            <h3 className="mb-12 text-sm font-black tracking-[0.2em] text-blue-800 uppercase">
+              The Sasswave Way
             </h3>
             <ul className="relative z-10 space-y-8">
-              {sifr.points.map((point, idx) => (
+              {sasswave.points.map((point: string, idx: number) => (
                 <li key={idx} className="flex gap-4">
                   <div className="mt-1 flex-shrink-0">
                     <Zap
-                      className="h-5 w-5 fill-emerald-500 text-emerald-600"
+                      className="h-5 w-5 fill-blue-600 text-blue-700"
                       aria-hidden="true"
                     />
                   </div>

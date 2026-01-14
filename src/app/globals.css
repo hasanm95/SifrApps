@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ================================================
-   SifrApps Design System - ELITE EDITION
-   "Stripe-meets-Apple" — Iridescent, 3D, Motion
+   Sasswave Design System - ACADEMIC LOGIC
+   "Light Mode" — White, Wave Blue, Grid
    ================================================ */
 
 @theme inline {
@@ -40,27 +40,27 @@
 :root {
   --radius: 0.75rem;
 
-  /* Elite Light Palette */
+  /* Academic Logic Palette */
   --background: #ffffff;
-  --foreground: #020617; /* Elite Near-Black */
+  --foreground: #0f172a; /* Slate 900 */
 
   --card: #ffffff;
-  --card-foreground: #020617;
+  --card-foreground: #0f172a;
 
-  --primary: #059669;
+  --primary: #0070f3; /* Wave Blue */
   --primary-foreground: #ffffff;
 
   --secondary: #f8fafc;
-  --secondary-foreground: #020617;
+  --secondary-foreground: #0f172a;
 
   --muted: #f1f5f9;
   --muted-foreground: #64748b;
 
   --accent: #f1f5f9;
-  --accent-foreground: #020617;
+  --accent-foreground: #0f172a;
 
   --border: #e2e8f0;
-  --ring: #059669;
+  --ring: #0070f3;
 }
 
 @layer base {
@@ -76,6 +76,14 @@
 
 @layer components {
   /* Elite Mesh Background */
+  /* Academic Logic Grid Background */
+  .bg-dot-grid {
+    background-color: #ffffff;
+    background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+  }
+
+  /* Iridescent mesh kept as a subtle variant but updated to blue */
   .bg-iridescent {
     position: relative;
     background-color: #ffffff;
@@ -89,17 +97,17 @@
     background:
       radial-gradient(
         circle at 50% 50%,
-        rgba(5, 150, 105, 0.08),
+        rgba(0, 112, 243, 0.05),
         transparent 40%
       ),
       radial-gradient(
         circle at 80% 20%,
-        rgba(37, 99, 235, 0.05),
+        rgba(13, 148, 136, 0.03),
         transparent 40%
       ),
       radial-gradient(
         circle at 20% 80%,
-        rgba(5, 150, 105, 0.03),
+        rgba(0, 112, 243, 0.02),
         transparent 40%
       );
     filter: blur(80px);

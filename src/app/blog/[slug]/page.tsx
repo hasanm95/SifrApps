@@ -20,12 +20,12 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Article Not Found | SifrApps",
+      title: "Article Not Found | Sasswave",
     };
   }
 
   return {
-    title: `${post.title} | SifrApps Blog`,
+    title: `${post.title} | Sasswave Blog`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -43,7 +43,7 @@ export async function generateMetadata({
       ],
     },
     alternates: {
-      canonical: `https://sifrapps.com/blog/${slug}`,
+      canonical: `https://sasswave.com/blog/${slug}`,
     },
   };
 }
@@ -71,15 +71,15 @@ export default async function BlogPostPage({ params }: PageProps) {
     },
     publisher: {
       "@type": "Organization",
-      name: "SifrApps",
+      name: "Sasswave",
       logo: {
         "@type": "ImageObject",
-        url: "https://sifrapps.com/logo.png",
+        url: "https://sasswave.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://sifrapps.com/blog/${slug}`,
+      "@id": `https://sasswave.com/blog/${slug}`,
     },
   };
 
@@ -97,7 +97,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="section-container relative z-10">
             <Link
               href="/blog"
-              className="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-emerald-800 uppercase transition-transform hover:-translate-x-1"
+              className="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-blue-800 uppercase transition-transform hover:-translate-x-1"
             >
               <ArrowLeft className="h-4 w-4" aria-hidden="true" />
               Back to Archive
@@ -143,7 +143,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               {/* Main Content */}
               <article className="lg:w-2/3">
                 <div
-                  className="prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:font-medium prose-strong:text-slate-900 prose-strong:font-black prose-a:text-emerald-600 prose-a:font-bold hover:prose-a:text-emerald-700 prose-img:rounded-[2rem] prose-img:border prose-img:border-slate-100 max-w-none"
+                  className="prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:font-medium prose-strong:text-slate-900 prose-strong:font-black prose-a:text-blue-600 prose-a:font-bold hover:prose-a:text-blue-700 prose-img:rounded-[2rem] prose-img:border prose-img:border-slate-100 max-w-none"
                   dangerouslySetInnerHTML={{ __html: contentHtml }}
                 />
               </article>
@@ -161,7 +161,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                       {["Twitter", "LinkedIn", "Copy"].map((platform) => (
                         <button
                           key={platform}
-                          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-emerald-500 hover:text-emerald-600"
+                          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
                         >
                           <span className="sr-only">{platform}</span>
                           <div className="h-4 w-4 bg-current opacity-20" />

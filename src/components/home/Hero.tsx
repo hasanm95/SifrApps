@@ -35,7 +35,7 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="bg-iridescent perspective-1000 relative flex min-h-screen items-center justify-center overflow-hidden pt-20"
+      className="bg-dot-grid perspective-1000 relative flex min-h-screen items-center justify-center overflow-hidden pt-20"
       aria-label="Introduction"
     >
       {/* Interactive Light Follower */}
@@ -44,7 +44,7 @@ export function Hero() {
         className="pointer-events-none fixed top-0 left-0 z-0 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 opacity-40 transition-opacity duration-1000"
         style={{
           background:
-            "radial-gradient(circle, rgba(5, 150, 105, 0.15) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(0, 112, 243, 0.1) 0%, transparent 70%)",
           willChange: "transform",
         }}
       />
@@ -62,33 +62,33 @@ export function Hero() {
       <div className="section-container relative z-10 text-center">
         <div className="animate-fade-in-up">
           {/* Elite Badge */}
-          <div className="parallax-badge mb-12 inline-flex items-center gap-3 rounded-full border border-emerald-100 bg-white/50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-emerald-600 uppercase shadow-sm backdrop-blur-md">
+          <div className="parallax-badge mb-12 inline-flex items-center gap-3 rounded-full border border-blue-100 bg-white/50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase shadow-sm backdrop-blur-md">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-600"></span>
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-600"></span>
             </span>
-            Engineering Elite Logic
+            Sasswave Software Studio
           </div>
 
           {/* Massive Display Headline */}
           <h1 className="parallax-headline text-display mb-10">
-            Logic-Driven
+            Software Engineered with
             <br />
             <span className="animate-scanline group relative inline-block text-slate-300">
-              Software
-              <div className="absolute -bottom-4 left-0 h-[6px] w-full rounded-full bg-emerald-500/20 blur-sm transition-colors group-hover:bg-emerald-500/40" />
+              Logical Precision.
+              <div className="absolute -bottom-4 left-0 h-[6px] w-full rounded-full bg-blue-600/20 blur-sm transition-colors group-hover:bg-blue-600/40" />
             </span>
           </h1>
 
           {/* Subtext with Elite Contrast */}
           <p className="parallax-subtext mx-auto mt-12 max-w-3xl text-xl leading-tight font-medium tracking-tight text-balance text-slate-500 md:text-2xl">
-            Founder-led development where{" "}
-            <span className="border-b-2 border-emerald-500/30 text-slate-900">
-              mathematical integrity
+            At Sasswave, we bridge the gap between{" "}
+            <span className="border-b-2 border-blue-600/30 text-slate-900">
+              complex mathematics
             </span>{" "}
-            meets{" "}
+            and{" "}
             <span className="text-slate-900 italic">
-              high-end digital craft
+              human-centric software
             </span>
             .
           </p>
@@ -97,7 +97,7 @@ export function Hero() {
           <div className="parallax-cta mt-16 flex flex-col items-center justify-center gap-8 sm:flex-row">
             <Button
               size="lg"
-              className="magnetic-btn h-16 w-full rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white shadow-2xl transition-all duration-500 hover:scale-110 hover:bg-emerald-600 active:scale-95 sm:w-auto"
+              className="magnetic-btn h-16 w-full rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white shadow-2xl transition-all duration-500 hover:scale-110 hover:bg-blue-600 active:scale-95 sm:w-auto"
               asChild
             >
               <Link href="/apps">View Portfolio</Link>
@@ -120,7 +120,7 @@ export function Hero() {
       </div>
 
       {/* Floating Decorative Elements (Parallax) */}
-      <div className="pointer-events-none absolute top-1/4 -right-20 h-80 w-80 animate-pulse rounded-full bg-emerald-100/10 blur-[120px]" />
+      <div className="pointer-events-none absolute top-1/4 -right-20 h-80 w-80 animate-pulse rounded-full bg-blue-100/10 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-1/4 -left-20 h-80 w-80 animate-pulse rounded-full bg-blue-100/5 blur-[120px] delay-700" />
     </section>
   );

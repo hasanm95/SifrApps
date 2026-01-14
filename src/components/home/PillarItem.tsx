@@ -13,8 +13,8 @@ export function PillarItem({ pillar }: { pillar: Pillar }) {
     Icons.HelpCircle;
 
   return (
-    <div className="tilt-card group flex flex-col items-start rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-sm transition-all duration-500 hover:border-emerald-200/50 hover:shadow-2xl">
-      <div className="mb-10 rounded-3xl border border-emerald-100/50 bg-emerald-50 p-5 text-emerald-600 shadow-inner transition-colors duration-500 group-hover:bg-emerald-600 group-hover:text-white">
+    <div className="tilt-card group flex flex-col items-start rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-sm transition-all duration-500 hover:border-blue-200/50 hover:shadow-2xl">
+      <div className="mb-10 rounded-3xl border border-blue-100/50 bg-blue-50 p-5 text-blue-600 shadow-inner transition-colors duration-500 group-hover:bg-blue-600 group-hover:text-white">
         <Icon className="h-6 w-6" />
       </div>
       <span className="mb-3 text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase">

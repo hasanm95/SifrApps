@@ -28,7 +28,7 @@ export const PRODUCTS = [
     description:
       "Lightweight, high-conversion tools for direct-to-consumer brands that prioritize speed over flashy bloat. We optimize for the micro-second.",
     metrics: ["+23% Engagement", "< 2.1KB Payload"],
-    color: "emerald",
+    color: "blue",
     cta: "Optimize Store",
     featured: true,
   },

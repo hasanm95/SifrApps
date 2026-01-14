@@ -10,7 +10,7 @@ export function SolutionsSection() {
     >
       <div className="mb-24 flex flex-col items-start gap-16 md:mb-32 md:flex-row">
         <div className="flex-1">
-          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-emerald-600 uppercase">
+          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase">
             Execution Vectors
           </span>
           <h2 className="text-5xl leading-[0.9] font-bold tracking-tight text-slate-900 md:text-7xl">
@@ -22,7 +22,7 @@ export function SolutionsSection() {
         <div className="flex-1 pt-8 md:pt-16">
           <p className="text-xl leading-tight font-medium text-balance text-slate-500 md:text-2xl">
             We don&apos;t just build features; we engineer{" "}
-            <span className="border-b-2 border-emerald-500/30 text-slate-900">
+            <span className="border-b-2 border-blue-600/30 text-slate-900">
               systemic improvements
             </span>{" "}
             that solve core business logic bottlenecks.
