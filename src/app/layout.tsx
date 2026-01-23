@@ -68,6 +68,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CKXH2GPBN3"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CKXH2GPBN3');
+            `,
+          }}
+        />
         {/* JSON-LD Schema for Organization */}
         <script
           type="application/ld+json"
