@@ -8,17 +8,17 @@ export function TechnicalFAQ() {
         "Yes, FomoGen is built on WCAG 2.1 guidelines to ensure radical inclusion for all users. We leverage semantic HTML and keyboard-navigable patterns by default.",
     },
     {
-      question: "How does Sasswave optimize performance?",
+      question: "How does AppLass optimize performance?",
       answer:
-        "Sasswave apps are developed using mathematical optimization techniques to minimize JavaScript execution time. We prioritize critical rendering paths and maintain a sub-2.1KB payload for core utilities.",
+        "AppLass apps are developed using mathematical optimization techniques to minimize JavaScript execution time. We prioritize critical rendering paths and maintain a sub-2.1KB payload for core utilities.",
     },
     {
-      question: "Does Sasswave track user data?",
+      question: "Does AppLass track user data?",
       answer:
         "No. Our zero-telemetry architecture ensures that we never log personal identifiers. We prioritize privacy-first engineering as a core technical requirement.",
     },
     {
-      question: "What is the technical moat of Sasswave?",
+      question: "What is the technical moat of AppLass?",
       answer:
         "We don't build bloat. We build waves of efficiency through first-principles engineering and mathematical precision, ensuring maximum impact with minimum browser overhead.",
     },

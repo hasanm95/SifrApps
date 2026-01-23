@@ -1,7 +1,7 @@
 export interface ComparisonFeature {
   label: string;
   competitorValue: string;
-  sasswaveValue: string;
+  applassValue: string;
   isPositive?: boolean;
 }
 
@@ -16,7 +16,7 @@ export interface ComparisonData {
     title: string;
     points: string[];
   };
-  sasswaveWay: {
+  applassWay: {
     title: string;
     points: string[];
   };
@@ -39,31 +39,31 @@ export const comparisons: ComparisonData[] = [
       {
         label: "Load Speed",
         competitorValue: "1.2s+",
-        sasswaveValue: "< 100ms",
+        applassValue: "< 100ms",
         isPositive: true,
       },
       {
         label: "Privacy",
         competitorValue: "Cookies & Tracking",
-        sasswaveValue: "Zero Telemetry",
+        applassValue: "Zero Telemetry",
         isPositive: true,
       },
       {
         label: "Accessibility",
         competitorValue: "Partial WCAG",
-        sasswaveValue: "100% Compliant",
+        applassValue: "100% Compliant",
         isPositive: true,
       },
       {
         label: "Script Size",
         competitorValue: "450KB+",
-        sasswaveValue: "4.2KB",
+        applassValue: "4.2KB",
         isPositive: true,
       },
       {
         label: "Pricing",
         competitorValue: "Strict Tiers",
-        sasswaveValue: "Logical Flat Rate",
+        applassValue: "Logical Flat Rate",
         isPositive: true,
       },
     ],
@@ -75,8 +75,8 @@ export const comparisons: ComparisonData[] = [
         "Complex dashboards with unnecessary feature bloat.",
       ],
     },
-    sasswaveWay: {
-      title: "The Sasswave Way",
+    applassWay: {
+      title: "The AppLass Way",
       points: [
         "Mathematical precision for maximum performance.",
         "Zero-telemetry privacy by default.",
@@ -101,31 +101,31 @@ export const comparisons: ComparisonData[] = [
       {
         label: "Method",
         competitorValue: "Gamified / Visual",
-        sasswaveValue: "Logical Friction",
+        applassValue: "Logical Friction",
         isPositive: true,
       },
       {
         label: "Battery Impact",
         competitorValue: "6-8% Daily",
-        sasswaveValue: "< 0.5% Daily",
+        applassValue: "< 0.5% Daily",
         isPositive: true,
       },
       {
         label: "Privacy",
         competitorValue: "Cloud-Synced",
-        sasswaveValue: "100% Local",
+        applassValue: "100% Local",
         isPositive: true,
       },
       {
         label: "Focus Logic",
         competitorValue: "Suggestive",
-        sasswaveValue: "Absolute Guardrails",
+        applassValue: "Absolute Guardrails",
         isPositive: true,
       },
       {
         label: "Philosophy",
         competitorValue: "Growth",
-        sasswaveValue: "Elimination",
+        applassValue: "Elimination",
         isPositive: true,
       },
     ],
@@ -137,8 +137,8 @@ export const comparisons: ComparisonData[] = [
         "Features optimized for retention, not productivity.",
       ],
     },
-    sasswaveWay: {
-      title: "The Sasswave Way",
+    applassWay: {
+      title: "The AppLass Way",
       points: [
         "Intentional friction switches brain to System 2 thinking.",
         "Native C++ implementation for zero battery lag.",

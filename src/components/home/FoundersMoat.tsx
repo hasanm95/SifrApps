@@ -30,7 +30,7 @@ export function FoundersMoat() {
         </div>
         <div className="max-w-sm flex-none">
           <p className="border-l-4 border-blue-600/20 pl-6 text-lg leading-relaxed font-medium text-slate-500 italic">
-            &quot;Sasswave apps are developed using mathematical optimization
+            &quot;AppLass apps are developed using mathematical optimization
             techniques to minimize JavaScript execution time.&quot; We engineer
             waves of efficiency through first-principles.
           </p>

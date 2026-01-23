@@ -1,6 +1,6 @@
 Role: Act as a Senior CRO (Conversion Rate Optimization) Designer and Tech Marketer.
 
-Project Name: SifrApps Comparison Template URL Target: sifrapps.com/compare/[competitor-name] Design Aesthetic: High-tech, minimalist, data-driven. Use the "SifrApps" Dark Mode theme (Deep Black, Pure White, Emerald Green accents).
+Project Name: AppLass Comparison Template URL Target: applass.com/compare/[competitor-name] Design Aesthetic: High-tech, minimalist, data-driven. Use the "AppLass" Dark Mode theme (Deep Black, Pure White, Emerald Green accents).
 
 Page Sections & Content:
 
@@ -8,19 +8,19 @@ The "Choice" Hero:
 
 Headline: "The Logical Alternative to [Competitor Name]."
 
-Sub-headline: "Why elite developers and high-growth Shopify merchants are switching from bloated legacy tools to SifrApps' logic-first architecture."
+Sub-headline: "Why elite developers and high-growth Shopify merchants are switching from bloated legacy tools to AppLass' logic-first architecture."
 
 CTA: "Make the Switch - Get Started for Free."
 
 The Comparison Matrix (Table):
 
-Create a 3-column table: [Feature], [Competitor Name], and [SifrApps Product].
+Create a 3-column table: [Feature], [Competitor Name], and [AppLass Product].
 
-Ensure the SifrApps column is visually highlighted with an emerald border and subtle glow.
+Ensure the AppLass column is visually highlighted with an emerald border and subtle glow.
 
 Columns to include: Load Speed, Privacy/Data Logging, Accessibility (WCAG), Battery/Server Impact, Pricing Model.
 
-Logic: Use green checkmarks for SifrApps and grey "X" or "Limited" icons for the competitor.
+Logic: Use green checkmarks for AppLass and grey "X" or "Limited" icons for the competitor.
 
 The "Technical Debt" Section:
 
@@ -28,7 +28,7 @@ Two-column layout.
 
 Left side (The Competitor): "The Legacy Way" (Bloated scripts, tracking cookies, slow load times).
 
-Right side (SifrApps): "The Sifr Way" (Clean math-based logic, zero telemetry, sub-5MB payload).
+Right side (AppLass): "The AppLass Way" (Clean math-based logic, zero telemetry, sub-5MB payload).
 
 "Why it Matters" Cards:
 
@@ -59,8 +59,8 @@ Sticky Header: Keep the "Install" button visible as the user scrolls through the
 Entrepreneur’s Implementation Strategy
 When you generate this page, make sure to create a few different versions. For example:
 
-sifrapps.com/compare/fomogen-vs-nudgify
+applass.com/compare/fomogen-vs-nudgify
 
-sifrapps.com/compare/mindful-guard-vs-forest
+applass.com/compare/mindful-guard-vs-forest
 
 Google Search Tip: Google loves "vs" queries because they represent high-intent users. In your Meta Title, use:

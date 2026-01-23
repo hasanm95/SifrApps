@@ -5,7 +5,7 @@ import { PILLARS } from "@/constants/home-data";
 import { Zap, Calculator, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About | The Sasswave Methodology",
+  title: "About | The AppLass Methodology",
   description:
     "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft.",
 };
@@ -24,13 +24,13 @@ export default function AboutPage() {
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
             <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-              The Sasswave Methodology
+              The AppLass Methodology
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
               The <span className="text-slate-300">Methodology.</span>
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-              At Sasswave, we bridge the gap between complex mathematics and
+              At AppLass, we bridge the gap between complex mathematics and
               human-centric software. From high-conversion Shopify tools to
               mindful mobile utilities, we build the &apos;Next Wave&apos; of
               digital performance—zero bloat, maximum impact.
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </div>
             <div className="flex-1">
               <p className="text-xl leading-relaxed font-medium text-slate-600">
-                Sasswave was founded on the belief that software should be a
+                AppLass was founded on the belief that software should be a
                 derivation of logical truth. We avoid the
                 &quot;feature-first&quot; trap and focus on systemic integrity.
               </p>

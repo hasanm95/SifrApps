@@ -6,9 +6,9 @@ import { comparisons } from "@/lib/compare";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Comparison Guides | Sasswave Analysis",
+  title: "Comparison Guides | AppLass Analysis",
   description:
-    "Logic-first product comparisons. Why elite teams choose Sasswave over legacy alternatives.",
+    "Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives.",
 };
 
 export default function CompareIndexPage() {

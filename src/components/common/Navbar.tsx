@@ -101,7 +101,7 @@ export function Navbar({
               onClick={() => setIsMenuOpen(false)}
             >
               <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 font-bold text-white transition-colors group-hover:bg-blue-700">
-                S
+                A
               </div>
               {!customBranding && (
                 <span
@@ -110,7 +110,7 @@ export function Navbar({
                     isDark ? "text-white" : "text-slate-900"
                   )}
                 >
-                  Sasswave
+                  AppLass
                 </span>
               )}
             </Link>
@@ -236,7 +236,7 @@ export function Navbar({
 
             <div className="mt-auto flex justify-center pb-12">
               <span className="text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
-                Sasswave Logic System
+                AppLass Logic System
               </span>
             </div>
           </div>

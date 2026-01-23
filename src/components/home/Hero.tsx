@@ -67,7 +67,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-600"></span>
             </span>
-            Sasswave Software Studio
+            AppLass Software Studio
           </div>
 
           {/* Massive Display Headline */}
@@ -83,7 +83,7 @@ export function Hero() {
           {/* Subtext with Elite Contrast */}
           <p className="parallax-subtext mx-auto mt-12 max-w-3xl text-xl leading-tight font-medium tracking-tight text-balance text-slate-500 md:text-2xl">
             Stop letting bloated software slow down your growth.{" "}
-            <span className="text-slate-900">Sasswave</span> builds elite-tier
+            <span className="text-slate-900">AppLass</span> builds elite-tier
             Shopify and Mobile tools driven by{" "}
             <span className="border-b-2 border-blue-600/30 text-slate-900">
               mathematical precision

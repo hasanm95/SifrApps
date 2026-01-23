@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sasswave | High-Performance Software Engineering",
+  title: "AppLass | High-Performance Software Engineering",
   description:
-    "At Sasswave, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.",
+    "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.",
   keywords: [
     "software studio",
     "Shopify apps",
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
     "accessibility",
     "WCAG",
     "web development",
-    "Sasswave",
+    "AppLass",
   ],
-  authors: [{ name: "Sasswave" }],
-  creator: "Sasswave",
+  authors: [{ name: "AppLass" }],
+  creator: "AppLass",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sasswave.com",
-    siteName: "Sasswave",
-    title: "Sasswave | Logic-Driven Software Studio",
+    url: "https://applass.com",
+    siteName: "AppLass",
+    title: "AppLass | Logic-Driven Software Studio",
     description:
       "Mathematical precision meets human-centric design. We build the Next Wave of digital performance.",
     images: [
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sasswave - Logic-Driven Software Studio",
+        alt: "AppLass - Logic-Driven Software Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sasswave | Logic-Driven Software Studio",
+    title: "AppLass | Logic-Driven Software Studio",
     description:
       "Mathematical precision meets human-centric design. We build high-performance apps for the modern web.",
     images: ["/og-image.png"],
@@ -75,8 +75,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Sasswave",
-              url: "https://sasswave.com",
+              name: "AppLass",
+              url: "https://applass.com",
               description:
                 "Logic-driven software studio building high-performance apps with mathematical precision.",
               foundingDate: "2019",

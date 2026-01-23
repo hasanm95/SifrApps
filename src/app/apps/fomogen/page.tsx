@@ -25,7 +25,7 @@ export default function FomogenPage() {
             applicationCategory: "BusinessApplication",
             author: {
               "@type": "Organization",
-              name: "Sasswave",
+              name: "AppLass",
             },
             description:
               "High-performance social proof app for Shopify optimized for speed and accessibility.",

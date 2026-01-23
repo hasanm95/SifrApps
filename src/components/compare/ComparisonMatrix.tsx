@@ -72,7 +72,7 @@ export function ComparisonMatrix({
                         className="h-4 w-4 text-blue-600"
                         aria-hidden="true"
                       />
-                      {feature.sasswaveValue}
+                      {feature.applassValue}
                     </div>
                   </td>
                 </tr>
@@ -105,7 +105,7 @@ export function ComparisonMatrix({
                     {productName}
                   </span>
                   <span className="text-sm font-black text-slate-900">
-                    {feature.sasswaveValue}
+                    {feature.applassValue}
                   </span>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import { SOLUTIONS } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Solutions | Sasswave Expertise",
+  title: "Solutions | AppLass Expertise",
   description:
     "Logical solutions for complex business bottlenecks. Engineering systemic improvements in E-commerce and digital productivity.",
 };

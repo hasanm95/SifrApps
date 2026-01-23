@@ -1,7 +1,7 @@
 The Antigravity Prompt: Mindful Guard Product Page
 Role: Act as a Conversion Rate Optimization (CRO) Expert and SEO Specialist.
 
-Project Name: Mindful Guard - Product Landing Page for SifrApps. Target URL Structure: sifrapps.com/apps/mindful-guard Core Objective: Drive Google Search traffic for "Productivity" and "Digital Wellness" while converting visitors to Play Store installs.
+Project Name: Mindful Guard - Product Landing Page for AppLass. Target URL Structure: applass.com/apps/mindful-guard Core Objective: Drive Google Search traffic for "Productivity" and "Digital Wellness" while converting visitors to Play Store installs.
 
 Page Structure & Content Strategy:
 
@@ -37,7 +37,7 @@ FAQ Section (SEO Rich): \* "How do I stop phone addiction on Android?"
 
 Design System & Brand Voice:
 
-Colors: Maintain the SifrApps Black & White aesthetic, but introduce a "Focus Purple" (#7C3AED) as a secondary accent to differentiate the mobile product line.
+Colors: Maintain the AppLass Black & White aesthetic, but introduce a "Focus Purple" (#7C3AED) as a secondary accent to differentiate the mobile product line.
 
 Voice: Professional, slightly academic/intellectual, and highly trustworthy.
 

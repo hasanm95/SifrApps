@@ -8,10 +8,10 @@ interface Way {
 
 interface TechnicalDebtProps {
   legacy: Way;
-  sasswave: Way;
+  applass: Way;
 }
 
-export function TechnicalDebt({ legacy, sasswave }: TechnicalDebtProps) {
+export function TechnicalDebt({ legacy, applass }: TechnicalDebtProps) {
   return (
     <Section className="bg-white py-24">
       <div className="section-container">
@@ -38,15 +38,15 @@ export function TechnicalDebt({ legacy, sasswave }: TechnicalDebtProps) {
             </ul>
           </div>
 
-          {/* Sifr Column */}
+          {/* AppLass Column */}
           <div className="relative overflow-hidden bg-slate-50 p-12 lg:p-20">
             <div className="absolute top-0 right-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/5 blur-[120px]" />
 
             <h3 className="mb-12 text-sm font-black tracking-[0.2em] text-blue-800 uppercase">
-              The Sasswave Way
+              The AppLass Way
             </h3>
             <ul className="relative z-10 space-y-8">
-              {sasswave.points.map((point: string, idx: number) => (
+              {applass.points.map((point: string, idx: number) => (
                 <li key={idx} className="flex gap-4">
                   <div className="mt-1 flex-shrink-0">
                     <Zap

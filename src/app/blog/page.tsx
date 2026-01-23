@@ -5,7 +5,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPosts, getBlogCategories } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "The Logic Lab | Sasswave Blog",
+  title: "The Logic Lab | AppLass Blog",
   description:
     "Deep dives into software engineering, mathematics, and digital productivity.",
 };

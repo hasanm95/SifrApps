@@ -1,12 +1,12 @@
 Role: Act as a world-class UI/UX Designer and Frontend Engineer.
 
-Project Name: SifrApps (SifrApps.com) Brand Identity: A "Logic-First" Software Studio founded by a mathematician and full-stack developer with 7 years of experience. The vibe is "Stripe-meets-Apple"—minimalist, high-performance, and elite.
+Project Name: AppLass (AppLass.com) Brand Identity: A "Logic-First" Software Studio founded by a mathematician and full-stack developer with 7 years of experience. The vibe is "Stripe-meets-Apple"—minimalist, high-performance, and elite.
 
 Layout & Structure:
 
 Hero Section: High-contrast, clean typography. Headline: "Logic-Driven Apps for the Modern Web." Sub-headline: "From Shopify conversion tools to mindful mobile experiences, we build software where mathematical precision meets human-centric design." Include a primary CTA: "Explore Our Apps."
 
-The "Founder's Moat" Section: A subtle block highlighting the "Sifr" philosophy: 7 years of full-stack expertise, a foundation in Mathematics, and a "WCAG 2.1 First" approach to accessibility.
+The "Founder's Moat" Section: A subtle block highlighting the "AppLass" philosophy: 7 years of full-stack expertise, a foundation in Mathematics, and a "WCAG 2.1 First" approach to accessibility.
 
 Product Bento Grid:
 
@@ -52,7 +52,7 @@ Product-Led SEO: By asking for a "Solutions Section" and "Bento Grid," you are c
 Pro-Tip for Antigravity:
 Once the site is generated, go into the "SEO Settings" of the tool and ensure your Meta Titles follow this pattern:
 
-Home: SifrApps | Logic-Driven Software Studio
+Home: AppLass | Logic-Driven Software Studio
 
 FomoGen Page: FomoGen: High-Performance Social Proof for Shopify
 

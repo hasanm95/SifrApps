@@ -20,12 +20,12 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Article Not Found | Sasswave",
+      title: "Article Not Found | AppLass",
     };
   }
 
   return {
-    title: `${post.title} | Sasswave Blog`,
+    title: `${post.title} | AppLass Blog`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -43,7 +43,7 @@ export async function generateMetadata({
       ],
     },
     alternates: {
-      canonical: `https://sasswave.com/blog/${slug}`,
+      canonical: `https://applass.com/blog/${slug}`,
     },
   };
 }
@@ -71,15 +71,15 @@ export default async function BlogPostPage({ params }: PageProps) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Sasswave",
+      name: "AppLass",
       logo: {
         "@type": "ImageObject",
-        url: "https://sasswave.com/logo.png",
+        url: "https://applass.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://sasswave.com/blog/${slug}`,
+      "@id": `https://applass.com/blog/${slug}`,
     },
   };
 

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Precision-engineered focus for Android. Zero ads. Zero tracking.",
     images: ["/apps/mindful-guard-og.png"],
-    url: "https://sasswave.com/apps/mindful-guard",
+    url: "https://applass.com/apps/mindful-guard",
   },
 };
 
@@ -37,7 +37,7 @@ export default function MindfulGuardPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            name: "Mindful Guard by Sasswave",
+            name: "Mindful Guard by AppLass",
             operatingSystem: "ANDROID",
             applicationCategory: "ProductivityApplication",
             offers: {

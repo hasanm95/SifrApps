@@ -10,24 +10,24 @@ Blog/Logic Lab: There is no archive or article structure yet.
 2. The Final Site Map (Structure)
    You need to create these physical pages to capture search traffic:
 
-sifrapps.com/ (The Homepage - Your current page, converted to Light Mode)
+applass.com/ (The Homepage - Your current page, converted to Light Mode)
 
-sifrapps.com/apps/fomogen (Dedicated Product Page)
+applass.com/apps/fomogen (Dedicated Product Page)
 
-sifrapps.com/apps/mindful-guard (Dedicated Product Page)
+applass.com/apps/mindful-guard (Dedicated Product Page)
 
-sifrapps.com/solutions/ecommerce-conversion (Problem-solver Page)
+applass.com/solutions/ecommerce-conversion (Problem-solver Page)
 
-sifrapps.com/compare/fomogen-vs-nudgify (Comparison Page)
+applass.com/compare/fomogen-vs-nudgify (Comparison Page)
 
-sifrapps.com/blog/ (The Content Hub)
+applass.com/blog/ (The Content Hub)
 
 3. Prompt for the Light Mode Conversion (Homepage)
    Use this prompt in your builder to switch the vibe and fix the navigation links.
 
 Prompt:
 
-"Convert the current SifrApps site to a Light Mode 'Academic Logic' aesthetic. Visual Changes:
+"Convert the current AppLass site to a Light Mode 'Academic Logic' aesthetic. Visual Changes:
 
 Background: Pure White (#FFFFFF) with a very subtle light-grey dot grid pattern.
 
@@ -56,11 +56,11 @@ Documentation -> /blog
 Content Update: Change 'Invasive Inclusion' to 'Radical Accessibility' for better branding."
 
 4. Prompt for the "Apps" Portfolio Page (/apps)
-   This page is for people searching for "SifrApps Portfolio" or "Shopify apps by Sifr."
+   This page is for people searching for "AppLass Portfolio" or "Shopify apps by AppLass."
 
 Prompt:
 
-"Create a new page for SifrApps.com at /apps. Layout: A clean header titled 'Our Ecosystem.' Content: Use a two-column grid.
+"Create a new page for AppLass.com at /apps. Layout: A clean header titled 'Our Ecosystem.' Content: Use a two-column grid.
 
 Card 1 (FomoGen): Title, screenshot placeholder, 'Social Proof for Shopify,' and a button 'View Product Details.'
 
@@ -73,7 +73,7 @@ Prompt:
 
 "Create a page at /compare. Content: Create a comparison table for Mindful Guard vs. Forest vs. StayFocused.
 
-Use the 'SifrApps wins' logic: Highlight our Privacy (100% Local), Battery (Sub-5MB), and Accessibility (WCAG 2.1).
+Use the 'AppLass wins' logic: Highlight our Privacy (100% Local), Battery (Sub-5MB), and Accessibility (WCAG 2.1).
 
 Style the table with thin grey borders and use the Emerald Green for 'Yes' checkmarks.
 

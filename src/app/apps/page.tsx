@@ -6,7 +6,7 @@ import { PRODUCTS } from "@/constants/home-data";
 import { Section } from "@/components/common/Section";
 
 export const metadata: Metadata = {
-  title: "Our Apps | Sasswave Ecosystem",
+  title: "Our Apps | AppLass Ecosystem",
   description:
     "Explore our suite of logic-driven applications designed for elite performance and digital discipline.",
 };
@@ -19,7 +19,7 @@ export default function AppsPage() {
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
             <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-              Sasswave Ecosystem
+              AppLass Ecosystem
             </span>
             <h1 className="text-display mb-8 max-w-4xl text-slate-900">
               Our <span className="text-slate-300">Ecosystem.</span>

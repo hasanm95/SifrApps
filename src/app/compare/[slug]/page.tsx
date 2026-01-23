@@ -20,10 +20,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const data = getComparisonBySlug(slug);
 
-  if (!data) return { title: "Comparison Found | Sasswave" };
+  if (!data) return { title: "Comparison Found | AppLass" };
 
   return {
-    title: `${data.productName} vs ${data.competitorName} | Sasswave`,
+    title: `${data.productName} vs ${data.competitorName} | AppLass`,
     description: `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`,
     openGraph: {
       title: `${data.productName} vs ${data.competitorName}`,
@@ -31,7 +31,7 @@ export async function generateMetadata({
       type: "website",
     },
     alternates: {
-      canonical: `https://sasswave.com/compare/${slug}`,
+      canonical: `https://applass.com/compare/${slug}`,
     },
   };
 }
@@ -50,19 +50,19 @@ export default async function ComparisonPage({ params }: PageProps) {
     description: data.heroSubheadline,
     author: {
       "@type": "Organization",
-      name: "Sasswave",
+      name: "AppLass",
     },
     publisher: {
       "@type": "Organization",
-      name: "Sasswave",
+      name: "AppLass",
       logo: {
         "@type": "ImageObject",
-        url: "https://sasswave.com/logo.png",
+        url: "https://applass.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://sasswave.com/compare/${slug}`,
+      "@id": `https://applass.com/compare/${slug}`,
     },
   };
 
@@ -104,7 +104,7 @@ export default async function ComparisonPage({ params }: PageProps) {
           features={data.matrix}
         />
 
-        <TechnicalDebt legacy={data.legacyWay} sasswave={data.sasswaveWay} />
+        <TechnicalDebt legacy={data.legacyWay} applass={data.applassWay} />
 
         <ValueHighlights />
 

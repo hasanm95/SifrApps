@@ -47,8 +47,8 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <SasswaveLogoSmall />
-              <span>Sasswave</span>
+              <AppLassLogoSmall />
+              <span>AppLass</span>
             </Link>
             <p
               className={cn(
@@ -138,7 +138,7 @@ export function Footer({ variant = "light" }: FooterProps) {
               isDark ? "text-slate-500" : "text-slate-600"
             )}
           >
-            © {currentYear} Sasswave. All rights reserved.
+            © {currentYear} AppLass. All rights reserved.
           </p>
           <p
             className={cn(
@@ -182,7 +182,7 @@ function FooterLink({
   );
 }
 
-function SasswaveLogoSmall() {
+function AppLassLogoSmall() {
   return (
     <svg
       className="h-6 w-6"
