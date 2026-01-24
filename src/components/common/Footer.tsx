@@ -1,11 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const footerLinks = {
   solutions: [
-    { label: "E-commerce Optimization", href: "/solutions" },
-    { label: "Digital Discipline Design", href: "/solutions" },
-    { label: "Radical Accessibility", href: "/solutions" },
+    { label: "Fomogen", href: "/apps/fomogen" },
+    { label: "Mindful Guard", href: "/apps/mindful-guard" },
   ],
   resources: [
     { label: "Our Ecosystem", href: "/apps" },
@@ -47,7 +47,13 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <AppLassLogoSmall />
+              <Image
+                src="/logo.png"
+                alt="AppLass"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
               <span>AppLass</span>
             </Link>
             <p
@@ -179,33 +185,5 @@ function FooterLink({
     >
       {children}
     </Link>
-  );
-}
-
-function AppLassLogoSmall() {
-  return (
-    <svg
-      className="h-6 w-6"
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <circle
-        cx="16"
-        cy="16"
-        r="12"
-        stroke="currentColor"
-        strokeWidth="2"
-        fill="none"
-      />
-      <circle
-        cx="16"
-        cy="16"
-        r="4"
-        fill="currentColor"
-        className="text-blue-600"
-      />
-    </svg>
   );
 }

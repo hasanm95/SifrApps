@@ -14,11 +14,16 @@ export function FomoGenCTA() {
       />
 
       <div className="section-container relative z-10 mx-auto max-w-4xl text-center">
-        <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-600 uppercase">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-green-50 px-4 py-2 text-[10px] font-black tracking-widest text-green-700 uppercase">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500" />
           {FOMOGEN_DATA.cta.subtitle}
-        </span>
+        </div>
+
         <h2 className="text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-8xl">
-          Start Scaling <span className="text-slate-300">Instantly.</span>
+          {FOMOGEN_DATA.cta.title.split(" ").slice(0, 3).join(" ")} <br />
+          <span className="text-slate-300">
+            {FOMOGEN_DATA.cta.title.split(" ").slice(3).join(" ")}
+          </span>
         </h2>
 
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed font-medium text-slate-500 md:text-xl">
@@ -47,6 +52,10 @@ export function FomoGenCTA() {
               {FOMOGEN_DATA.cta.primaryCTA}
             </a>
           </Button>
+
+          <p className="mt-8 text-xs font-bold tracking-widest text-slate-400 uppercase">
+            No Credit Card Required • Beta Access
+          </p>
         </div>
       </div>
     </Section>

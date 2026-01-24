@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://applass.com"),
   title: "AppLass | High-Performance Software Engineering",
   description:
     "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.",
@@ -92,6 +93,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "AppLass",
               url: "https://applass.com",
+              logo: "https://applass.com/logo.png",
               description:
                 "Logic-driven software studio building high-performance apps with mathematical precision.",
               foundingDate: "2019",

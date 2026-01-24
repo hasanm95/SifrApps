@@ -2,28 +2,27 @@ import { Metadata } from "next";
 import { Navbar, Footer } from "@/components/common";
 import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
 import { CoreFeatures } from "@/components/apps/fomogen/CoreFeatures";
-import { LivePreviewSection } from "@/components/apps/fomogen/LivePreviewSection";
-import { DisplayOptions } from "@/components/apps/fomogen/DisplayOptions";
+import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSection";
+import { TestimonialsSection } from "@/components/apps/fomogen/TestimonialsSection";
 import { PricingSection } from "@/components/apps/fomogen/PricingSection";
 import { FomoGenCTA } from "@/components/apps/fomogen/FomoGenCTA";
 
 export const metadata: Metadata = {
-  title: "FomoGen | Elite Social Proof for Shopify",
+  title: "FOMO Gen | #1 Free Social Proof, Urgency & Trust App for Shopify",
   description:
-    "Drive conversions with authentic social proof and urgency. Lightweight, WCAG 2.1 compliant, and performance-optimized for elite Shopify brands.",
+    "Skyrocket your Shopify sales with FOMO Gen. The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!",
   keywords: [
-    "Shopify social proof",
-    "FOMO notifications",
-    "conversion optimization",
-    "e-commerce",
-    "FomoGen",
-    "sales notifications",
-    "urgency marketing",
+    "shopify social proof",
+    "sales pop",
+    "countdown timer",
+    "stock alert",
+    "trust badges",
+    "sticky cart",
   ],
   openGraph: {
-    title: "FomoGen | Elite Social Proof for Shopify",
+    title: "Boost Your Shopify Sales with FOMO Gen",
     description:
-      "Drive conversions with real-time purchase notifications, urgency timers, and elite smart automation.",
+      "The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!",
     images: ["/apps/fomogen-og.png"],
     url: "https://applass.com/apps/fomogen",
   },
@@ -34,26 +33,38 @@ export default function FomogenPage() {
     <div className="bg-white">
       <Navbar />
 
-      {/* AEO: JSON-LD Schema for FomoGen */}
+      {/* Structured SEO Script */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            name: "FomoGen",
+            name: "FOMO Gen",
             operatingSystem: "Shopify",
             applicationCategory: "BusinessApplication",
-            author: {
-              "@type": "Organization",
-              name: "AppLass",
-            },
-            description:
-              "High-performance social proof app for Shopify. Professional purchase notifications, urgency timers, and trust badges.",
             offers: {
               "@type": "Offer",
-              price: "0.00",
+              price: "0",
               priceCurrency: "USD",
+              priceValidUntil: "2026-12-31",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "12",
+              bestRating: "5",
+              worstRating: "1",
+            },
+            featureList:
+              "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
+            screenshot: "https://applass.com/images/fomogen-dashboard.jpg",
+            description:
+              "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+            author: {
+              "@type": "Organization",
+              name: "Applass",
+              url: "https://applass.com",
             },
           }),
         }}
@@ -61,9 +72,9 @@ export default function FomogenPage() {
 
       <main className="flex-1 overflow-x-hidden">
         <FomoGenHero />
-        <LivePreviewSection />
+        <SpeedBenefitSection />
         <CoreFeatures />
-        <DisplayOptions />
+        <TestimonialsSection />
         <PricingSection />
         <FomoGenCTA />
       </main>

@@ -5,7 +5,6 @@ category: "Productivity"
 author: "Mathematician Founder"
 featured: true
 excerpt: "Reclaim your time by engineering intentional friction into your digital life. Why willpower is a system failure."
-thumbnail: "/blog/logic-of-focus.jpg"
 ---
 
 ## The Logic of Focus: Why Most Digital Detox Apps Fail (and How to Fix It)
