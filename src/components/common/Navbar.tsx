@@ -127,11 +127,14 @@ export function Navbar({
           {/* Navigation Links (Desktop) */}
           {!customBranding && (
             <div className="hidden items-center gap-10 md:flex">
+              <NavLink href="/" isDark={isDark}>
+                Home
+              </NavLink>
+              <NavLink href="/about" isDark={isDark}>
+                About
+              </NavLink>
               <NavLink href="/apps" isDark={isDark}>
                 Ecosystem
-              </NavLink>
-              <NavLink href="/solutions" isDark={isDark}>
-                Expertise
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
                 Logic Lab
@@ -189,19 +192,22 @@ export function Navbar({
             <div className="flex flex-col gap-8">
               {!customBranding && (
                 <>
+                  <MobileNavLink href="/" isDark={isDark} onClick={toggleMenu}>
+                    Home
+                  </MobileNavLink>
+                  <MobileNavLink
+                    href="/about"
+                    isDark={isDark}
+                    onClick={toggleMenu}
+                  >
+                    About
+                  </MobileNavLink>
                   <MobileNavLink
                     href="/apps"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
                     Ecosystem
-                  </MobileNavLink>
-                  <MobileNavLink
-                    href="/solutions"
-                    isDark={isDark}
-                    onClick={toggleMenu}
-                  >
-                    Expertise
                   </MobileNavLink>
                   <MobileNavLink
                     href="/blog"
