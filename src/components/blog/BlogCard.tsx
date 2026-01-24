@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { MarkdownBlogPost } from "@/lib/blog";
@@ -16,7 +17,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         isHero ? "gap-12 p-1 pt-1 lg:flex" : "p-8"
       )}
     >
-      {/* Thumbnail Placeholder */}
+      {/* Post Thumbnail */}
       <div
         className={cn(
           "relative overflow-hidden rounded-[1.8rem] bg-slate-100 shadow-inner",
@@ -25,9 +26,18 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
             : "mb-8 aspect-[16/9]"
         )}
       >
-        <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-2xl font-black tracking-widest text-slate-300 uppercase">
-          {post.category}
-        </div>
+        {post.thumbnail ? (
+          <Image
+            src={post.thumbnail}
+            alt={post.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-2xl font-black tracking-widest text-slate-300 uppercase">
+            {post.category}
+          </div>
+        )}
 
         {/* Subtle hover overlay */}
         <div className="absolute inset-0 bg-blue-600/0 transition-colors duration-500 group-hover:bg-blue-600/5" />

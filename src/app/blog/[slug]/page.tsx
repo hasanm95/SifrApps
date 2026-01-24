@@ -6,11 +6,14 @@ import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/blog";
 import markdownToHtml from "@/lib/markdownToHtml";
+import { ShareArticle } from "@/components/blog/ShareArticle";
 import { ArrowLeft } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
@@ -153,22 +156,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <div className="sticky top-32 flex flex-col gap-8">
                   <AppCallout appName="Mindful Guard" />
                   <AppCallout appName="FOMOgen" />
-                  <div className="rounded-[2rem] border border-slate-100 bg-slate-50/50 p-8">
-                    <h4 className="mb-4 text-sm font-black tracking-widest text-slate-900 uppercase">
-                      Share Article
-                    </h4>
-                    <div className="flex gap-4">
-                      {["Twitter", "LinkedIn", "Copy"].map((platform) => (
-                        <button
-                          key={platform}
-                          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
-                        >
-                          <span className="sr-only">{platform}</span>
-                          <div className="h-4 w-4 bg-current opacity-20" />
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  <ShareArticle title={post.title} slug={slug} />
                 </div>
               </aside>
             </div>
