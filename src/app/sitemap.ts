@@ -7,12 +7,22 @@ export const dynamic = "force-static";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://applass.com";
 
-  // Static routes
-  const routes = ["", "/blog"].map((route) => ({
+  // Static core routes
+  const staticRoutes = ["", "/about", "/apps", "/blog", "/compare"].map(
+    (route) => ({
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: route === "" ? 1 : 0.8,
+    })
+  );
+
+  // Specific App Landing Pages
+  const appRoutes = ["/apps/fomogen", "/apps/mindful-guard"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: 1,
+    priority: 0.9,
   }));
 
   // Dynamic blog posts
@@ -32,5 +42,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...routes, ...blogRoutes, ...compareRoutes];
+  return [...staticRoutes, ...appRoutes, ...blogRoutes, ...compareRoutes];
 }
