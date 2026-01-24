@@ -93,6 +93,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "AppLass",
               url: "https://applass.com",
+              logo: "https://applass.com/logo.png",
               description:
                 "Logic-driven software studio building high-performance apps with mathematical precision.",
               foundingDate: "2019",

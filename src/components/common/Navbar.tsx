@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -100,9 +101,13 @@ export function Navbar({
               className="group focus-ring flex items-center gap-2 rounded-lg px-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 font-bold text-white transition-colors group-hover:bg-blue-700">
-                A
-              </div>
+              <Image
+                src="/logo.png"
+                alt="AppLass Logo"
+                width={32}
+                height={32}
+                className="h-8 w-8 rounded-lg object-contain"
+              />
               {!customBranding && (
                 <span
                   className={cn(
