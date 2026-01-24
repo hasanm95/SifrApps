@@ -1,53 +1,85 @@
 import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import * as Icons from "lucide-react";
+import Image from "next/image";
 
 export function CoreFeatures() {
   return (
     <Section id="features" className="relative bg-white py-24 md:py-32">
-      {/* Background Glows for Depth */}
-      <div className="pointer-events-none absolute -top-24 right-0 h-96 w-96 rounded-full bg-green-50/50 blur-[100px]" />
-
       <div className="section-container relative z-10">
-        <div className="mb-16 md:mb-20">
+        <div className="mb-20 text-center lg:text-left">
           <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-600 uppercase">
-            Proprietary Systems
+            Platform Pillars
           </span>
           <h2 className="mb-10 text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-8xl">
-            Precision Built.
+            Everything You Need.
             <br />
-            <span className="text-slate-300">Driven by Logic.</span>
+            <span className="text-slate-300">Nothing You Don&apos;t.</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 lg:gap-24">
           {FOMOGEN_DATA.features.map((feature, idx) => {
             const Icon =
               (Icons[
                 feature.iconName as keyof typeof Icons
               ] as Icons.LucideIcon) || Icons.HelpCircle;
+            const isEven = idx % 2 === 0;
+
             return (
               <div
                 key={idx}
-                className="glass-elite group tilt-card rounded-[2.5rem] border border-white/40 bg-white/40 p-8 shadow-[0_20px_50px_-10px_rgba(33,196,93,0.05)] backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(33,196,93,0.1)] md:rounded-[3rem] md:p-10"
+                className={`flex flex-col items-center gap-12 lg:flex-row lg:gap-24 ${
+                  isEven ? "" : "lg:flex-row-reverse"
+                }`}
               >
-                <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl border border-green-100 bg-green-50 text-green-600 transition-all duration-500 group-hover:bg-green-600 group-hover:text-white group-hover:shadow-lg group-hover:shadow-green-100 md:h-16 md:w-16">
-                  <Icon className="h-7 w-7 md:h-8 md:w-8" />
+                {/* Visual Section */}
+                <div className="relative w-full flex-1">
+                  {feature.image ? (
+                    <div className="relative aspect-video overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
+                      <Image
+                        src={feature.image}
+                        alt={feature.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex aspect-video items-center justify-center rounded-[2rem] border border-green-100 bg-green-50/30 md:rounded-[3rem]">
+                      <Icon className="h-24 w-24 text-green-600 opacity-20" />
+                    </div>
+                  )}
+
+                  {/* Decorative elements */}
+                  <div
+                    className={`absolute -right-6 -bottom-6 h-24 w-24 rounded-full bg-green-500/10 blur-2xl ${isEven ? "" : "right-auto -left-6"}`}
+                  />
                 </div>
 
-                <h3 className="mb-4 text-xl font-bold tracking-tight text-slate-900 md:text-2xl">
-                  {feature.title}
-                </h3>
+                {/* Content Section */}
+                <div className="flex-1 text-center lg:text-left">
+                  <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-green-100 bg-green-50 text-green-600 shadow-sm">
+                    <Icon className="h-8 w-8" />
+                  </div>
 
-                <p className="text-sm leading-relaxed font-medium text-slate-500 md:text-base">
-                  {feature.description}
-                </p>
+                  <h3 className="mb-4 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
+                    {feature.title}
+                  </h3>
 
-                <div className="mt-8 flex items-center gap-2">
-                  <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500" />
-                  <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase">
-                    {feature.highlight}
-                  </span>
+                  <h4 className="mb-6 text-xl font-bold text-green-600 italic">
+                    {feature.subtitle}
+                  </h4>
+
+                  <p className="text-lg leading-relaxed font-medium text-slate-500 md:text-xl">
+                    {feature.description}
+                  </p>
+
+                  <div className="mt-10 flex items-center justify-center gap-3 lg:justify-start">
+                    <div className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
+                    <span className="text-xs font-black tracking-widest text-slate-400 uppercase">
+                      {feature.highlight}
+                    </span>
+                  </div>
                 </div>
               </div>
             );
