@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { useParallax } from "@/hooks/useParallax";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export function FomoGenHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -83,7 +83,7 @@ export function FomoGenHero() {
         {/* Before/After Comparison Image */}
         <div className="parallax-fomo-image relative mx-auto w-full max-w-2xl lg:mx-0">
           <div className="relative aspect-square overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] lg:rounded-[3rem]">
-            <Image
+            <ExportedImage
               src="/v1/apps/fomogen/comparison-hero.png"
               alt="Shopify store conversion rate optimization before and after using FOMO Gen"
               fill

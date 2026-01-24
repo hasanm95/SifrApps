@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { cn } from "@/lib/utils";
 
 const footerLinks = {
@@ -47,7 +47,7 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <Image
+              <ExportedImage
                 src="/logo.png"
                 alt="AppLass"
                 width={24}

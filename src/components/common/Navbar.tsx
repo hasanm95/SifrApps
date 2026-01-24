@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -101,7 +101,7 @@ export function Navbar({
               className="group focus-ring flex items-center gap-2 rounded-lg px-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              <Image
+              <ExportedImage
                 src="/logo.png"
                 alt="AppLass Logo"
                 width={32}

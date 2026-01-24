@@ -5,7 +5,9 @@ import { Navbar, Footer } from "@/components/common";
 import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/blog";
-import markdownToHtml from "@/lib/markdownToHtml";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import ExportedImage from "next-image-export-optimizer";
 import { ShareArticle } from "@/components/blog/ShareArticle";
 import { ArrowLeft } from "lucide-react";
 
@@ -58,8 +60,6 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) {
     notFound();
   }
-
-  const contentHtml = await markdownToHtml(post.content || "");
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -145,10 +145,36 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="flex flex-col gap-16 lg:flex-row">
               {/* Main Content */}
               <article className="lg:w-2/3">
-                <div
-                  className="prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:font-medium prose-strong:text-slate-900 prose-strong:font-black prose-a:text-blue-600 prose-a:font-bold hover:prose-a:text-blue-700 prose-img:rounded-[2rem] prose-img:border prose-img:border-slate-100 max-w-none"
-                  dangerouslySetInnerHTML={{ __html: contentHtml }}
-                />
+                <div className="prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:font-medium prose-strong:text-slate-900 prose-strong:font-black prose-a:text-blue-600 prose-a:font-bold hover:prose-a:text-blue-700 prose-img:rounded-[2rem] prose-img:border prose-img:border-slate-100 max-w-none">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      img: ({
+                        src,
+                        alt,
+                        node: _node,
+                        width,
+                        height,
+                        ...props
+                      }) => {
+                        if (!src) return null;
+                        return (
+                          <span className="relative my-12 block aspect-video overflow-hidden rounded-[2rem] border border-slate-100 shadow-xl">
+                            <ExportedImage
+                              src={src as string}
+                              alt={alt || ""}
+                              fill
+                              className="object-cover"
+                              {...props}
+                            />
+                          </span>
+                        );
+                      },
+                    }}
+                  >
+                    {post.content || ""}
+                  </ReactMarkdown>
+                </div>
               </article>
 
               {/* Sidebar */}

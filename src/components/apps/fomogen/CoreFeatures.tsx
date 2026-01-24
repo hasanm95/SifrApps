@@ -1,7 +1,7 @@
 import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import * as Icons from "lucide-react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export function CoreFeatures() {
   return (
@@ -37,7 +37,7 @@ export function CoreFeatures() {
                 <div className="relative w-full flex-1">
                   {feature.image ? (
                     <div className="relative aspect-video overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
-                      <Image
+                      <ExportedImage
                         src={feature.image}
                         alt={feature.title}
                         fill

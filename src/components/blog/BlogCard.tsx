@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { MarkdownBlogPost } from "@/lib/blog";
@@ -27,7 +27,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         )}
       >
         {post.thumbnail ? (
-          <Image
+          <ExportedImage
             src={post.thumbnail}
             alt={post.title}
             fill
