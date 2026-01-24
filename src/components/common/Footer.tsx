@@ -3,9 +3,8 @@ import { cn } from "@/lib/utils";
 
 const footerLinks = {
   solutions: [
-    { label: "E-commerce Optimization", href: "/solutions" },
-    { label: "Digital Discipline Design", href: "/solutions" },
-    { label: "Radical Accessibility", href: "/solutions" },
+    { label: "Fomogen", href: "/apps/fomogen" },
+    { label: "Mindful Guard", href: "/apps/mindful-guard" },
   ],
   resources: [
     { label: "Our Ecosystem", href: "/apps" },
