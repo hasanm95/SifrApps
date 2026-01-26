@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
 import { Navbar, Footer } from "@/components/common";
 import { Button } from "@/components/ui/button";
 import { PRODUCTS } from "@/constants/home-data";
@@ -38,11 +39,14 @@ export default function AppsPage() {
                 key={product.id}
                 className="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
               >
-                <div className="aspect-[16/9] bg-slate-50 p-12">
-                  {/* Placeholder for screenshot */}
-                  <div className="flex h-full w-full items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 text-sm font-bold tracking-widest text-slate-300 uppercase">
-                    {product.name} Interface
-                  </div>
+                <div className="aspect-[16/9] overflow-hidden bg-slate-50">
+                  <ExportedImage
+                    src={product.image}
+                    alt={`${product.name} - ${product.tagline}`}
+                    width={800}
+                    height={450}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
                 </div>
 
                 <div className="flex flex-1 flex-col p-10 lg:p-12">

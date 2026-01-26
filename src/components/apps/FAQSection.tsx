@@ -6,9 +6,9 @@ export function FAQSection() {
     <Section id="faq" className="border-t border-slate-100/50 bg-[#FAFBFD]">
       <div className="mb-20 text-center">
         <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-[#7C3AED] uppercase">
-          Common Logic
+          Engineered FAQ
         </span>
-        <h3 className="text-5xl font-bold tracking-tight text-slate-900">
+        <h3 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
           Technical Clarifications
         </h3>
       </div>
@@ -29,7 +29,7 @@ export function FAQSection() {
         ))}
       </div>
 
-      {/* FAQ Schema for SEO */}
+      {/* FAQ Schema for SEO - AI Snippet Bait */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -1,59 +1,121 @@
 export const MINDFUL_GUARD_DATA = {
   hero: {
-    headline: "Reclaim Your Focus with Logical Guardrails.",
+    headline: "Reclaim Your Neural Architecture.",
     subheadline:
-      "Mindful Guard is a precision-engineered Android utility designed to break the loop of digital distraction. No fluff. No intrusive ads. Just pure, mathematical discipline for your digital life.",
-    primaryCTA: "Download on Google Play",
+      "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry.",
+    primaryCTA: "Deploy to Android",
+    secondaryCTA: "View the Logic",
     playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard", // Placeholder
+      "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
   },
-  science: {
-    title: "The Scientific Approach",
+  logic: {
+    title: "Why do you need a Cognitive Firewall?",
     description:
-      "We use 'Intentional Friction'—calculus and logic-based triggers—to interrupt the reflexive nature of mindless scrolling. By introducing a deliberate cognitive pause, we help you align your actions with your intent.",
-    blueprintTitle: "Focus Workflow Architecture",
+      "Willpower is a finite resource. Social media algorithms are supercomputers designed to deplete it. MindfulGuard is not a 'wellness' app; it is a Cognitive Firewall that intercepts distraction attempts at the system level.",
   },
-  features: [
+  differentiators: [
     {
-      title: "App Shielding",
+      title: "Zero-Telemetry",
       description:
-        "Real-time logic blocks for distracting apps. Enforce your digital boundaries with systemic precision.",
-      iconName: "ShieldCheck",
+        "We don't know what you block. Your data never leaves your device. Unlike VPN-based blockers, we run locally.",
+      icon: "🛡️",
+      iconName: "Shield",
     },
     {
-      title: "Focus Intervals",
+      title: "Native Efficiency",
       description:
-        "Deep work sessions backed by productivity science. Optimized for maximum cognitive output.",
-      iconName: "Timer",
+        "Built for Android's specific battery protocols. Won't drain your battery or get killed by MIUI/OneUI optimizers.",
+      icon: "⚡",
+      iconName: "Zap",
     },
     {
-      title: "Privacy First",
+      title: "Strict Mode",
       description:
-        "Zero data tracking. Built 100% for your peace of mind. Your data never leaves your device.",
+        "No bypass. No '5 more minutes.' When the wall is up, it stays up until the timer hits zero.",
+      icon: "🔒",
       iconName: "Lock",
     },
   ],
-  specs: [
-    { label: "Payload Size", value: "< 5MB" },
-    { label: "Battery Impact", value: "Zero Background Drain" },
-    { label: "Performance", value: "Native Android" },
-    { label: "Privacy", value: "100% Local" },
-  ],
+  comparison: {
+    title: "The Logic Matrix: MindfulGuard vs. The Industry.",
+    specs: [
+      {
+        label: "Privacy Model",
+        mindfulGuard: "Offline / Zero-Data",
+        opal: "Cloud Analytics",
+        freedom: "Cloud Sync",
+      },
+      {
+        label: "Pricing",
+        mindfulGuard: "Fair / Transparent",
+        opal: "$99/year Subscription",
+        freedom: "$39/year Subscription",
+      },
+      {
+        label: "Blocking Tech",
+        mindfulGuard: "Native Android API",
+        opal: "VPN (High Latency)",
+        freedom: "VPN / Cross-platform",
+      },
+      {
+        label: "Battery Impact",
+        mindfulGuard: "<1%",
+        opal: "High",
+        freedom: "Moderate",
+      },
+    ],
+  },
   faqs: [
     {
-      question: "How do I stop phone addiction on Android?",
+      question: "Does MindfulGuard work on Xiaomi/Samsung/MIUI devices?",
       answer:
-        "Mindful Guard uses intentional friction to interrupt reflexive app opening. By adding a logical step between the impulse and the action, it helps rewire your digital habits.",
+        'Yes. MindfulGuard is engineered with "Battery Optimization Exemption" protocols specifically to prevent aggressive Android skins like MIUI from killing the background process.',
     },
     {
-      question: "What is the best app blocker for students?",
+      question: "Is MindfulGuard safe for privacy?",
       answer:
-        "For students requiring deep focus, Mindful Guard provides a distraction-free environment without the data mining found in free competitors.",
+        "Yes. MindfulGuard operates on a zero-telemetry architecture. It does not require internet access to function, ensuring your data never leaves your device.",
     },
     {
-      question: "Does Mindful Guard track my data?",
+      question: "How does Strict Mode work?",
       answer:
-        "No. Mindful Guard is built with a zero-trust architecture. All processing and logic execution happen locally on your Android device.",
+        "Strict Mode locks your chosen settings for a set duration. It prevents you from uninstalling the app or changing the schedule until the timer expires.",
     },
   ],
+  footer: {
+    tagline: "Engineered by AppLass.",
+    copyright: "Built with mathematical precision.",
+  },
+};
+
+// Schema.org SoftwareApplication data for SEO
+export const MINDFUL_GUARD_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "MindfulGuard",
+  operatingSystem: "Android",
+  applicationCategory: "ProductivityApplication",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+  },
+  description:
+    "A privacy-first Android app blocker that uses strict logic to prevent digital distractions without collecting user data.",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "150",
+  },
+  featureList:
+    "Zero-Telemetry Privacy, Offline Architecture, Strict Mode, Battery Optimization Exemption",
+  author: {
+    "@type": "Organization",
+    name: "AppLass",
+    url: "https://applass.com",
+  },
+  downloadUrl:
+    "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
+  screenshot: "https://applass.com/images/mindfulguard-hero.jpg",
 };

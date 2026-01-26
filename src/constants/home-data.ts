@@ -30,6 +30,7 @@ export const PRODUCTS = [
     metrics: ["+23% Engagement", "< 2.1KB Payload"],
     color: "blue",
     cta: "Optimize Store",
+    image: "/v1/apps/fomogen-feature.png",
     featured: true,
   },
   {
@@ -42,6 +43,7 @@ export const PRODUCTS = [
     metrics: ["2.4h Mean Saved", "Zero-Tracking"],
     color: "blue",
     cta: "Reclaim Focus",
+    image: "/v1/apps/mindful-guard-feature.png",
     featured: false,
   },
 ];

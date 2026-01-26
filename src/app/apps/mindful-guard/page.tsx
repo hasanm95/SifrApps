@@ -1,26 +1,31 @@
 import { Metadata } from "next";
 import { Navbar, Footer } from "@/components/common";
 import { MindfulHero } from "@/components/apps/MindfulHero";
-import { ScienceSection } from "@/components/apps/ScienceSection";
-import { FeatureBento } from "@/components/apps/FeatureBento";
-import { TechSpecs } from "@/components/apps/TechSpecs";
+import { LogicSection } from "@/components/apps/LogicSection";
+import { DifferentiatorsSection } from "@/components/apps/DifferentiatorsSection";
+import { ComparisonMatrix } from "@/components/apps/ComparisonMatrix";
 import { FAQSection } from "@/components/apps/FAQSection";
+import { MINDFUL_GUARD_SCHEMA } from "@/constants/mindful-guard-data";
 
 export const metadata: Metadata = {
-  title: "Mindful Guard | Privacy-First Android App Blocker",
+  title:
+    "MindfulGuard: The Privacy-First Android App Blocker & Cognitive Firewall",
   description:
-    "Precision-engineered focus for Android. Reclaim your digital sovereignty with zero ads, zero tracking, and mathematical discipline.",
+    "Stop doomscrolling with strict logic. MindfulGuard is the offline-first, zero-telemetry app blocker engineered for deep work. No subscriptions. No tracking.",
   keywords: [
-    "Productivity",
-    "Digital Wellness",
-    "Android App Blocker",
-    "Focus Tools",
-    "Mindful Guard",
+    "Android app blocker",
+    "dopamine detox app",
+    "focus timer android",
+    "privacy focus tool",
+    "stop phone addiction",
+    "cognitive firewall",
+    "zero telemetry",
+    "offline app blocker",
   ],
   openGraph: {
-    title: "Mindful Guard | Reclaim Your Focus",
+    title: "MindfulGuard | Reclaim Your Neural Architecture",
     description:
-      "Precision-engineered focus for Android. Zero ads. Zero tracking.",
+      "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry.",
     images: ["/apps/mindful-guard-og.png"],
     url: "https://applass.com/apps/mindful-guard",
   },
@@ -30,36 +35,27 @@ export default function MindfulGuardPage() {
   return (
     <>
       <Navbar />
-      {/* SoftwareApplication Schema for SEO */}
+      {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Mindful Guard by AppLass",
-            operatingSystem: "ANDROID",
-            applicationCategory: "ProductivityApplication",
-            offers: {
-              "@type": "Offer",
-              price: "0.00",
-              priceCurrency: "USD",
-            },
-            description:
-              "Mindful Guard is a precision-engineered Android utility designed to break the loop of digital distraction.",
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.8",
-              ratingCount: "1024",
-            },
-          }),
+          __html: JSON.stringify(MINDFUL_GUARD_SCHEMA),
         }}
       />
       <main className="flex-1">
+        {/* Section 1: The Hero (Above the Fold) */}
         <MindfulHero />
-        <ScienceSection />
-        <FeatureBento />
-        <TechSpecs />
+
+        {/* Section 2: The Logic (The "Why" - AI Optimization) */}
+        <LogicSection />
+
+        {/* Section 3: The Differentiators (The "Moat") */}
+        <DifferentiatorsSection />
+
+        {/* Section 4: The Comparison Matrix (Conversion Driver) */}
+        <ComparisonMatrix />
+
+        {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
         <FAQSection />
       </main>
       <Footer />
