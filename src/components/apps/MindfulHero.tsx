@@ -30,14 +30,14 @@ export function MindfulHero() {
       <div className="section-container relative z-10 text-center">
         <div className="animate-fade-in-up">
           <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-purple-100 bg-purple-50/50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-[#7C3AED] uppercase shadow-sm backdrop-blur-md">
-            Productivity Science
+            Cognitive Firewall
           </div>
 
           <h1 className="parallax-mindful-headline text-display mb-10 text-slate-900">
-            Reclaim Your Focus with
+            {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(0, 2).join(" ")}
             <br />
             <span className="group relative text-[#7C3AED] italic">
-              Logical Guardrails
+              {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(2).join(" ")}
               <div className="absolute -bottom-4 left-0 h-[6px] w-full rounded-full bg-[#7C3AED]/20 blur-sm transition-colors group-hover:bg-[#7C3AED]/40" />
             </span>
           </h1>
@@ -62,8 +62,8 @@ export function MindfulHero() {
               className="group h-16 w-full rounded-2xl px-12 text-lg font-bold text-slate-900 backdrop-blur-sm transition-all hover:bg-white/80 sm:w-auto"
               asChild
             >
-              <a href="#science">
-                Explore the Logic
+              <a href="#logic">
+                {MINDFUL_GUARD_DATA.hero.secondaryCTA}
                 <span className="ml-2 inline-block transition-transform group-hover:translate-y-2">
                   ↓
                 </span>
