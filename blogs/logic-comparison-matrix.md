@@ -50,4 +50,4 @@ But if you are a developer, an engineer, or a student who needs a tool that "act
 
 **Ready to deploy the logical choice?**
 
-[Deploy MindfulGuard on Google Play](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See the Full Breakdown](/apps/mindful-guard)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See the Full Breakdown](/apps/mindful-guard)

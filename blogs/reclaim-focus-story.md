@@ -52,4 +52,4 @@ I stopped trying to "try harder" and started using a system that does the work f
 
 **Ready to reclaim your focus?**
 
-[Deploy MindfulGuard on Google Play](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Learn How It Works](/apps/mindful-guard)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Learn How It Works](/apps/mindful-guard)

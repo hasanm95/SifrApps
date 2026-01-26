@@ -56,4 +56,4 @@ If you want a lifestyle app and don't mind the price, Opal is fine. If you need 
 
 **Ready to make the switch?**
 
-[Deploy MindfulGuard on Google Play](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See Full Comparison](/apps/mindful-guard#comparison)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See Full Comparison](/apps/mindful-guard#comparison)

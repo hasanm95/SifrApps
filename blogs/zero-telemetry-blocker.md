@@ -48,4 +48,4 @@ Stop letting bloated algorithms dictate your attention span. It's time to move t
 
 **Explore more engineering insights:**
 
-[Explore the Logic Lab (All Articles)](/blog) | [Deploy MindfulGuard](/apps/mindful-guard)
+[Explore the Logic Lab (All Articles)](/blog) | [Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)

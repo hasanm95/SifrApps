@@ -50,4 +50,4 @@ Stop trying to fight a super-computer with your bare hands. It's time to deploy 
 
 **Ready to enter Monk Mode 2.0?**
 
-[Deploy MindfulGuard on Google Play](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Explore the Logic](/apps/mindful-guard)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Explore the Logic](/apps/mindful-guard)
